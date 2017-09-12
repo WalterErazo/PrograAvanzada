@@ -2,7 +2,7 @@ package Serie1;
 
 /**
  * 
- * 
+ * class: Decimales
  * author: Andres Pineda
  * 
  */
@@ -12,6 +12,10 @@ public class Decimales implements Chudnovsky{
 	private double consty = 13591409;
 	private long constz = -262537412640768000L;
 	
+	
+	/**
+	 * Este metodo calcula factorial
+	 */
 	public double factorial(double num) {
 		if (num == 0){
 			return 1;
@@ -21,6 +25,9 @@ public class Decimales implements Chudnovsky{
 		}
 	}
 
+	/**
+	 * Este es el metodo donde recursivamente se calcula Chudnovsky
+	 */
 	public double Csky(double k) {
 		if (k < 0) {
 			return 0;
