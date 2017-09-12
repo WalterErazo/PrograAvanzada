@@ -4,7 +4,11 @@ import Serie1.Decimales;
 import Serie2.Reportero;
 import Serie2.Partido;
 
-
+/**
+ * 
+ * @author Andres Pineda
+ * v. 0.0.1
+ */
 public class Main {
 
 	public static void main(String[] args) {
@@ -51,5 +55,7 @@ public class Main {
 		/*
 		 * Serie #3
 		 */
+		
+		
 	}
 }

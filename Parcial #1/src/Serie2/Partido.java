@@ -1,20 +1,31 @@
 package Serie2;
-
+/**
+ * Class Partido
+ * @author Andres Pineda
+ *
+ */
 public class Partido implements Reportero{
 	
 	int m, n;
 	public boolean end = false;
 	String juegos[] = new String [10];
-	
+	/**
+	 * get  m
+	 * 
+	 */
 	public void getm(int m) {
 		this.m = m;
 	}
-	
+	/**
+	 * get n
+	 */
 	public void getn(int n) {
 		this.n = n;
 	}
 		
-	
+	/**
+	 * Este metodo calcula el ganador
+	 */
 	public String calcularGanador(int game) {
 		if (m == 6 && n <= 4 || m == 7 && n == 5 || m == 7 && n == 6) {
 			end = true;
@@ -37,6 +48,9 @@ public class Partido implements Reportero{
 	}
 
 
+	/**
+	 * este metodo calcula al campeon
+	 */
 	public String calcularCampeon() {
 		int WinsM = 0;
 		int WinsN = 0;
@@ -56,6 +70,9 @@ public class Partido implements Reportero{
 		}	
 	}
 	
+	/**
+	 * este metodo recuerda el ganador de un juego si este existe
+	 */
 	public String recordarGanador(int juego) {
 		if (juegos[juego] != null) {
 			return juegos[juego];
