@@ -12,7 +12,7 @@ public class Triangle implements Shape{
     }
     
     public double getArea(){
-        return ((base*height)*(1/2));
+        return ((base*height)/2);
     }
     
     public String toString(){
