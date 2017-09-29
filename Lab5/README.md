@@ -9,11 +9,29 @@
 FROM [codenvy/ubuntu_jdk8](https://hub.docker.com/r/codenvy/ubuntu_jdk8/)
 
 # Commands
+LAb 4 Tarea Andres Pineda
+===================
 
-| #       | Command           | 
-| :------------- |:------------- |
-| 1      | `mvn -f ${current.project.path} clean install && java -jar ${current.project.path}/target/*.jar` |
 
-# App output
+private static class node
+-------------
+crea un objeto node.
 
-App output is streamed into a console. Note that if your app expects user input, do not use command but execute jars in the terminal directly.
+public string first()
+-------------
+devuelve el primer nodo.
+public string last()
+-------------
+devuelve el ultimo nodo.
+
+public string addFirst()
+-------------
+añade un nodo al inicio.
+
+public string addLast()
+-------------
+añade un nodo al fin.
+
+public string removeFirst()
+-------------
+quita el primer nodo
