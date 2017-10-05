@@ -18,11 +18,10 @@ namespace Proyecto1_PrograAvanzada
         }
         Congreso Goathemala = new Congreso();
         string Act_Name;
-        string Act_Work;
         string Act_Password;
+        string Act_Work;
 
 
-        
         //---------------------------LogIn---------------------------------------
         private void button1_Click(object sender, EventArgs e)
         {
@@ -36,7 +35,14 @@ namespace Proyecto1_PrograAvanzada
             SearchUserPassword(Act_Name);
             if (Act_Password == LogIn_Password_txt.Text)
             {
-                //crear usuario temporal que pisados
+                if (Act_Work == "Parlamentario")
+                {
+                    Parlamentario TempPar = this.SearchParlamentario();
+                }
+                else
+                {
+                    //Asesor TemAse = new Asesor();
+                }
                 A.SelectTab(2);
             }
             else
@@ -69,9 +75,6 @@ namespace Proyecto1_PrograAvanzada
                 MessageBox.Show("Las contraseñas deven coinsidir");
             }
         }
-
-
-
         //---------------------------CreateANewUser---------------------------------------
 
 
@@ -87,6 +90,10 @@ namespace Proyecto1_PrograAvanzada
         private void Principal_User_Buttom_Click(object sender, EventArgs e)
         {
             A.SelectTab(3);
+        }
+        private void Principal_Exit_Buttom_Click(object sender, EventArgs e)
+        {
+            A.SelectTab(0);
         }
         //---------------------------Principal---------------------------------------
 
@@ -141,7 +148,18 @@ namespace Proyecto1_PrograAvanzada
 
         void SearchUserPassword(string Act_Name)
         {
-            Act_Password = Goathemala.BuscarUsuario(Act_Name);
+            Act_Password = Goathemala.BuscarUsuarioP(Act_Name);
         }
+
+        void SearchUserWork(string Act_Name)
+        {
+            Act_Work = Goathemala.BuscarUsuarioW(Act_Name);
+        }
+
+        Parlamentario SearchParlamentario()
+        {
+            return Goathemala.SParlamentario(Act_Name);
+        }
+
     }
 }

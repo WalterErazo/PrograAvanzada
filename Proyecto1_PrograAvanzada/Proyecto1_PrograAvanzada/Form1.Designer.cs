@@ -39,6 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.CreateANewUser = new System.Windows.Forms.TabPage();
+            this.label35 = new System.Windows.Forms.Label();
             this.CreateANewUser_Work_Combobox = new System.Windows.Forms.ComboBox();
             this.CreateANewUser_Sex_Combobox = new System.Windows.Forms.ComboBox();
             this.CreateANewUser_Create_buttom = new System.Windows.Forms.Button();
@@ -53,6 +54,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.Principal = new System.Windows.Forms.TabPage();
+            this.Principal_Exit_Buttom = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.Principal_Regulations_Buttom = new System.Windows.Forms.Button();
             this.Principal_User_Buttom = new System.Windows.Forms.Button();
@@ -123,12 +125,21 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.RentLaws = new System.Windows.Forms.TabPage();
             this.Regulations = new System.Windows.Forms.TabPage();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.label31 = new System.Windows.Forms.Label();
             this.SeeRegulations = new System.Windows.Forms.TabPage();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.button24 = new System.Windows.Forms.Button();
+            this.label32 = new System.Windows.Forms.Label();
             this.CreateRegulations = new System.Windows.Forms.TabPage();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
             this.DeleteRegulations = new System.Windows.Forms.TabPage();
             this.RentRegulations = new System.Windows.Forms.TabPage();
+            this.CreateANEwUser_AsociatedP_txt = new System.Windows.Forms.TextBox();
             this.A.SuspendLayout();
             this.LogIn.SuspendLayout();
             this.CreateANewUser.SuspendLayout();
@@ -140,6 +151,8 @@
             this.CreateLaws.SuspendLayout();
             this.DeleteLaws.SuspendLayout();
             this.Regulations.SuspendLayout();
+            this.SeeRegulations.SuspendLayout();
+            this.CreateRegulations.SuspendLayout();
             this.SuspendLayout();
             // 
             // A
@@ -259,6 +272,8 @@
             // 
             // CreateANewUser
             // 
+            this.CreateANewUser.Controls.Add(this.CreateANEwUser_AsociatedP_txt);
+            this.CreateANewUser.Controls.Add(this.label35);
             this.CreateANewUser.Controls.Add(this.CreateANewUser_Work_Combobox);
             this.CreateANewUser.Controls.Add(this.CreateANewUser_Sex_Combobox);
             this.CreateANewUser.Controls.Add(this.CreateANewUser_Create_buttom);
@@ -279,6 +294,16 @@
             this.CreateANewUser.TabIndex = 1;
             this.CreateANewUser.Text = "CreateANewUser";
             this.CreateANewUser.UseVisualStyleBackColor = true;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(23, 198);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(79, 20);
+            this.label35.TabIndex = 20;
+            this.label35.Text = "Asociado:";
             // 
             // CreateANewUser_Work_Combobox
             // 
@@ -305,7 +330,7 @@
             // CreateANewUser_Create_buttom
             // 
             this.CreateANewUser_Create_buttom.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreateANewUser_Create_buttom.Location = new System.Drawing.Point(63, 239);
+            this.CreateANewUser_Create_buttom.Location = new System.Drawing.Point(69, 239);
             this.CreateANewUser_Create_buttom.Name = "CreateANewUser_Create_buttom";
             this.CreateANewUser_Create_buttom.Size = new System.Drawing.Size(201, 37);
             this.CreateANewUser_Create_buttom.TabIndex = 17;
@@ -403,6 +428,7 @@
             // 
             // Principal
             // 
+            this.Principal.Controls.Add(this.Principal_Exit_Buttom);
             this.Principal.Controls.Add(this.label12);
             this.Principal.Controls.Add(this.Principal_Regulations_Buttom);
             this.Principal.Controls.Add(this.Principal_User_Buttom);
@@ -413,6 +439,16 @@
             this.Principal.TabIndex = 2;
             this.Principal.Text = "Principal";
             this.Principal.UseVisualStyleBackColor = true;
+            // 
+            // Principal_Exit_Buttom
+            // 
+            this.Principal_Exit_Buttom.Location = new System.Drawing.Point(215, 215);
+            this.Principal_Exit_Buttom.Name = "Principal_Exit_Buttom";
+            this.Principal_Exit_Buttom.Size = new System.Drawing.Size(104, 51);
+            this.Principal_Exit_Buttom.TabIndex = 8;
+            this.Principal_Exit_Buttom.Text = "Cerrar";
+            this.Principal_Exit_Buttom.UseVisualStyleBackColor = true;
+            this.Principal_Exit_Buttom.Click += new System.EventHandler(this.Principal_Exit_Buttom_Click);
             // 
             // label12
             // 
@@ -964,7 +1000,7 @@
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(259, 282);
+            this.button16.Location = new System.Drawing.Point(242, 62);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(75, 23);
             this.button16.TabIndex = 5;
@@ -973,7 +1009,7 @@
             // 
             // CreateLaws_Create_Buttom
             // 
-            this.CreateLaws_Create_Buttom.Location = new System.Drawing.Point(244, 41);
+            this.CreateLaws_Create_Buttom.Location = new System.Drawing.Point(244, 21);
             this.CreateLaws_Create_Buttom.Name = "CreateLaws_Create_Buttom";
             this.CreateLaws_Create_Buttom.Size = new System.Drawing.Size(73, 33);
             this.CreateLaws_Create_Buttom.TabIndex = 4;
@@ -1073,6 +1109,9 @@
             // 
             // Regulations
             // 
+            this.Regulations.Controls.Add(this.button23);
+            this.Regulations.Controls.Add(this.button22);
+            this.Regulations.Controls.Add(this.button21);
             this.Regulations.Controls.Add(this.button20);
             this.Regulations.Controls.Add(this.label31);
             this.Regulations.Location = new System.Drawing.Point(4, 22);
@@ -1082,20 +1121,47 @@
             this.Regulations.Text = "Regulations";
             this.Regulations.UseVisualStyleBackColor = true;
             // 
+            // button23
+            // 
+            this.button23.Location = new System.Drawing.Point(49, 103);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(111, 32);
+            this.button23.TabIndex = 4;
+            this.button23.Text = "Crear Reglamento";
+            this.button23.UseVisualStyleBackColor = true;
+            // 
+            // button22
+            // 
+            this.button22.Location = new System.Drawing.Point(49, 152);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(111, 32);
+            this.button22.TabIndex = 3;
+            this.button22.Text = "Borrar Reglamento";
+            this.button22.UseVisualStyleBackColor = true;
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(49, 202);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(111, 40);
+            this.button21.TabIndex = 2;
+            this.button21.Text = "Prestar/Devolver Reglamento";
+            this.button21.UseVisualStyleBackColor = true;
+            // 
             // button20
             // 
-            this.button20.Location = new System.Drawing.Point(49, 67);
+            this.button20.Location = new System.Drawing.Point(49, 55);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(111, 32);
             this.button20.TabIndex = 1;
-            this.button20.Text = "button20";
+            this.button20.Text = "Ver Reglamentos";
             this.button20.UseVisualStyleBackColor = true;
             // 
             // label31
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(24, 24);
+            this.label31.Location = new System.Drawing.Point(11, 24);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(98, 18);
             this.label31.TabIndex = 0;
@@ -1103,6 +1169,9 @@
             // 
             // SeeRegulations
             // 
+            this.SeeRegulations.Controls.Add(this.textBox12);
+            this.SeeRegulations.Controls.Add(this.button24);
+            this.SeeRegulations.Controls.Add(this.label32);
             this.SeeRegulations.Location = new System.Drawing.Point(4, 22);
             this.SeeRegulations.Name = "SeeRegulations";
             this.SeeRegulations.Size = new System.Drawing.Size(351, 317);
@@ -1110,14 +1179,60 @@
             this.SeeRegulations.Text = "SeeRegulations";
             this.SeeRegulations.UseVisualStyleBackColor = true;
             // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(14, 45);
+            this.textBox12.Multiline = true;
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(316, 231);
+            this.textBox12.TabIndex = 2;
+            // 
+            // button24
+            // 
+            this.button24.Location = new System.Drawing.Point(255, 11);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(75, 23);
+            this.button24.TabIndex = 1;
+            this.button24.Text = "Regresar";
+            this.button24.UseVisualStyleBackColor = true;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(11, 16);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(120, 13);
+            this.label32.TabIndex = 0;
+            this.label32.Text = "Reglamentos Existentes";
+            // 
             // CreateRegulations
             // 
+            this.CreateRegulations.Controls.Add(this.label34);
+            this.CreateRegulations.Controls.Add(this.label33);
             this.CreateRegulations.Location = new System.Drawing.Point(4, 22);
             this.CreateRegulations.Name = "CreateRegulations";
             this.CreateRegulations.Size = new System.Drawing.Size(351, 317);
             this.CreateRegulations.TabIndex = 13;
             this.CreateRegulations.Text = "CreateRegulations";
             this.CreateRegulations.UseVisualStyleBackColor = true;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(22, 66);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(63, 13);
+            this.label34.TabIndex = 1;
+            this.label34.Text = "Descripcion";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(50, 31);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(44, 13);
+            this.label33.TabIndex = 0;
+            this.label33.Text = "Nombre";
             // 
             // DeleteRegulations
             // 
@@ -1136,6 +1251,13 @@
             this.RentRegulations.TabIndex = 15;
             this.RentRegulations.Text = "RentRegulations";
             this.RentRegulations.UseVisualStyleBackColor = true;
+            // 
+            // CreateANEwUser_AsociatedP_txt
+            // 
+            this.CreateANEwUser_AsociatedP_txt.Location = new System.Drawing.Point(175, 198);
+            this.CreateANEwUser_AsociatedP_txt.Name = "CreateANEwUser_AsociatedP_txt";
+            this.CreateANEwUser_AsociatedP_txt.Size = new System.Drawing.Size(139, 20);
+            this.CreateANEwUser_AsociatedP_txt.TabIndex = 21;
             // 
             // Form1
             // 
@@ -1166,6 +1288,10 @@
             this.DeleteLaws.PerformLayout();
             this.Regulations.ResumeLayout(false);
             this.Regulations.PerformLayout();
+            this.SeeRegulations.ResumeLayout(false);
+            this.SeeRegulations.PerformLayout();
+            this.CreateRegulations.ResumeLayout(false);
+            this.CreateRegulations.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1273,6 +1399,17 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Button Principal_Exit_Buttom;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.TextBox CreateANEwUser_AsociatedP_txt;
     }
 }
 
