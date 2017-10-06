@@ -17,11 +17,10 @@ namespace Proyecto1_PrograAvanzada
             InitializeComponent();
         }
         Congreso Goathemala = new Congreso();
-        Goathemala.
         string Act_Name;
         string Act_Password;
         string Act_Work;
-
+       
 
         //---------------------------LogIn---------------------------------------
         private void button1_Click(object sender, EventArgs e)
@@ -31,7 +30,7 @@ namespace Proyecto1_PrograAvanzada
 
 
         private void button2_Click(object sender, EventArgs e)
-        {
+        {      
             Act_Name = LogIn_User_txt.Text;
             Act_Password = SearchUserPassword(Act_Name);
             Act_Work = SearchUserWork(Act_Name);
