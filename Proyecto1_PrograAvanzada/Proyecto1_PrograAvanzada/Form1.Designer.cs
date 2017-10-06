@@ -172,10 +172,10 @@
             this.A.Controls.Add(this.CreateRegulations);
             this.A.Controls.Add(this.DeleteRegulations);
             this.A.Controls.Add(this.RentRegulations);
-            this.A.Location = new System.Drawing.Point(-3, 2);
+            this.A.Location = new System.Drawing.Point(-3, 3);
             this.A.Name = "A";
             this.A.SelectedIndex = 0;
-            this.A.Size = new System.Drawing.Size(359, 343);
+            this.A.Size = new System.Drawing.Size(359, 342);
             this.A.TabIndex = 0;
             // 
             // LogIn
@@ -191,7 +191,7 @@
             this.LogIn.Location = new System.Drawing.Point(4, 22);
             this.LogIn.Name = "LogIn";
             this.LogIn.Padding = new System.Windows.Forms.Padding(3);
-            this.LogIn.Size = new System.Drawing.Size(351, 317);
+            this.LogIn.Size = new System.Drawing.Size(351, 316);
             this.LogIn.TabIndex = 0;
             this.LogIn.Text = "LogIn";
             this.LogIn.UseVisualStyleBackColor = true;
@@ -290,7 +290,7 @@
             this.CreateANewUser.Location = new System.Drawing.Point(4, 22);
             this.CreateANewUser.Name = "CreateANewUser";
             this.CreateANewUser.Padding = new System.Windows.Forms.Padding(3);
-            this.CreateANewUser.Size = new System.Drawing.Size(351, 317);
+            this.CreateANewUser.Size = new System.Drawing.Size(351, 316);
             this.CreateANewUser.TabIndex = 1;
             this.CreateANewUser.Text = "CreateANewUser";
             this.CreateANewUser.UseVisualStyleBackColor = true;

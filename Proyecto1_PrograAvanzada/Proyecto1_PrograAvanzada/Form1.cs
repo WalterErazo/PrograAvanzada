@@ -17,6 +17,7 @@ namespace Proyecto1_PrograAvanzada
             InitializeComponent();
         }
         Congreso Goathemala = new Congreso();
+        Goathemala.
         string Act_Name;
         string Act_Password;
         string Act_Work;
@@ -32,7 +33,8 @@ namespace Proyecto1_PrograAvanzada
         private void button2_Click(object sender, EventArgs e)
         {
             Act_Name = LogIn_User_txt.Text;
-            SearchUserPassword(Act_Name);
+            Act_Password = SearchUserPassword(Act_Name);
+            Act_Work = SearchUserWork(Act_Name);
             if (Act_Password == LogIn_Password_txt.Text)
             {
                 if (Act_Work == "Parlamentario")
@@ -41,7 +43,7 @@ namespace Proyecto1_PrograAvanzada
                 }
                 else
                 {
-                    //Asesor TemAse = new Asesor();
+                    //Asesor TemAse = this.SearchAsesor();
                 }
                 A.SelectTab(2);
             }
@@ -63,12 +65,14 @@ namespace Proyecto1_PrograAvanzada
                 {
                     Parlamentario newParlamentario = new Parlamentario(CreateANewUser_Name_txt.Text, int.Parse(CreateANewUser_Age_txt.Text), CreateANewUser_Sex_Combobox.Text, CreateANewUser_password_txt.Text);
                     Goathemala.addParlamentario(newParlamentario);
+                    A.SelectTab(2);
                 }
                 else
                 {
                     Asesor newAsesor = new Asesor(CreateANewUser_Name_txt.Text, int.Parse(CreateANewUser_Age_txt.Text), CreateANewUser_Sex_Combobox.Text, CreateANewUser_password_txt.Text);
+                    AsociarAParlamentario(CreateANEwUser_AsociatedP_txt.Text, newAsesor);
+                    A.SelectTab(2);
                 }
-                A.SelectTab(2);
             }
             else
             {
@@ -94,6 +98,7 @@ namespace Proyecto1_PrograAvanzada
         private void Principal_Exit_Buttom_Click(object sender, EventArgs e)
         {
             A.SelectTab(0);
+            //Falta cerrar sesion del usuario actual
         }
         //---------------------------Principal---------------------------------------
 
@@ -146,14 +151,14 @@ namespace Proyecto1_PrograAvanzada
         //---------------------------Rent/Return_Regulations---------------------------------------
 
 
-        void SearchUserPassword(string Act_Name)
+        string SearchUserPassword(string Act_Name)
         {
-            Act_Password = Goathemala.BuscarUsuarioP(Act_Name);
+            return Goathemala.BuscarUsuarioP(Act_Name);
         }
 
-        void SearchUserWork(string Act_Name)
+        string SearchUserWork(string Act_Name)
         {
-            Act_Work = Goathemala.BuscarUsuarioW(Act_Name);
+            return Goathemala.BuscarUsuarioW(Act_Name);
         }
 
         Parlamentario SearchParlamentario()
@@ -161,5 +166,14 @@ namespace Proyecto1_PrograAvanzada
             return Goathemala.SParlamentario(Act_Name);
         }
 
+        Asesor SearchAsesor()
+        {
+            return Goathemala.SAsesor(Act_Name);
+        }
+
+        void AsociarAParlamentario(string ParName, Asesor AS)
+        {
+            Goathemala.AsociarAParlamentario(ParName, AS);
+        }
     }
 }
