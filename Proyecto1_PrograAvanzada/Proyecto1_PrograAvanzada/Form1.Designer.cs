@@ -39,6 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.CreateANewUser = new System.Windows.Forms.TabPage();
+            this.CreateANEwUser_AsociatedP_txt = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.CreateANewUser_Work_Combobox = new System.Windows.Forms.ComboBox();
             this.CreateANewUser_Sex_Combobox = new System.Windows.Forms.ComboBox();
@@ -65,7 +66,6 @@
             this.UserDetails_Age_txt = new System.Windows.Forms.TextBox();
             this.UserDetails_Password_txt = new System.Windows.Forms.TextBox();
             this.UserDetails_Name_txt = new System.Windows.Forms.TextBox();
-            this.UserDetails_EditData_Buttom = new System.Windows.Forms.Button();
             this.UserDetails_SeeGroup_Buttom = new System.Windows.Forms.Button();
             this.UserDetails_Back_Buttom = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
@@ -75,14 +75,14 @@
             this.label13 = new System.Windows.Forms.Label();
             this.GroupUser = new System.Windows.Forms.TabPage();
             this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.GroupUser_X8_Buttom = new System.Windows.Forms.Button();
+            this.GroupUser_X7_Buttom = new System.Windows.Forms.Button();
+            this.GroupUser_X6_Buttom = new System.Windows.Forms.Button();
+            this.GroupUser_X5_Buttom = new System.Windows.Forms.Button();
+            this.GroupUser_X4_Buttom = new System.Windows.Forms.Button();
+            this.GroupUser_X3_Buttom = new System.Windows.Forms.Button();
+            this.GroupUser_X2_Buttom = new System.Windows.Forms.Button();
+            this.GroupUser_X1_Buttom = new System.Windows.Forms.Button();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -92,15 +92,15 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.GroupUser_AS6_txt = new System.Windows.Forms.TextBox();
+            this.GroupUser_AS7_txt = new System.Windows.Forms.TextBox();
+            this.GroupUser_AS8_txt = new System.Windows.Forms.TextBox();
+            this.GroupUser_AS1_txt = new System.Windows.Forms.TextBox();
+            this.GroupUser_AS2_txt = new System.Windows.Forms.TextBox();
+            this.GroupUser_AS3_txt = new System.Windows.Forms.TextBox();
+            this.GroupUser_AS4_txt = new System.Windows.Forms.TextBox();
+            this.GroupUser_AS5_txt = new System.Windows.Forms.TextBox();
+            this.GroupUser_Par_Txt = new System.Windows.Forms.TextBox();
             this.Law = new System.Windows.Forms.TabPage();
             this.button15 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
@@ -139,7 +139,6 @@
             this.label33 = new System.Windows.Forms.Label();
             this.DeleteRegulations = new System.Windows.Forms.TabPage();
             this.RentRegulations = new System.Windows.Forms.TabPage();
-            this.CreateANEwUser_AsociatedP_txt = new System.Windows.Forms.TextBox();
             this.A.SuspendLayout();
             this.LogIn.SuspendLayout();
             this.CreateANewUser.SuspendLayout();
@@ -295,6 +294,13 @@
             this.CreateANewUser.Text = "CreateANewUser";
             this.CreateANewUser.UseVisualStyleBackColor = true;
             // 
+            // CreateANEwUser_AsociatedP_txt
+            // 
+            this.CreateANEwUser_AsociatedP_txt.Location = new System.Drawing.Point(175, 198);
+            this.CreateANEwUser_AsociatedP_txt.Name = "CreateANEwUser_AsociatedP_txt";
+            this.CreateANEwUser_AsociatedP_txt.Size = new System.Drawing.Size(139, 20);
+            this.CreateANEwUser_AsociatedP_txt.TabIndex = 21;
+            // 
             // label35
             // 
             this.label35.AutoSize = true;
@@ -435,7 +441,7 @@
             this.Principal.Controls.Add(this.Principal_Laws_Buttom);
             this.Principal.Location = new System.Drawing.Point(4, 22);
             this.Principal.Name = "Principal";
-            this.Principal.Size = new System.Drawing.Size(351, 317);
+            this.Principal.Size = new System.Drawing.Size(351, 316);
             this.Principal.TabIndex = 2;
             this.Principal.Text = "Principal";
             this.Principal.UseVisualStyleBackColor = true;
@@ -497,7 +503,6 @@
             this.UserDetails.Controls.Add(this.UserDetails_Age_txt);
             this.UserDetails.Controls.Add(this.UserDetails_Password_txt);
             this.UserDetails.Controls.Add(this.UserDetails_Name_txt);
-            this.UserDetails.Controls.Add(this.UserDetails_EditData_Buttom);
             this.UserDetails.Controls.Add(this.UserDetails_SeeGroup_Buttom);
             this.UserDetails.Controls.Add(this.UserDetails_Back_Buttom);
             this.UserDetails.Controls.Add(this.label17);
@@ -507,7 +512,7 @@
             this.UserDetails.Controls.Add(this.label13);
             this.UserDetails.Location = new System.Drawing.Point(4, 22);
             this.UserDetails.Name = "UserDetails";
-            this.UserDetails.Size = new System.Drawing.Size(351, 317);
+            this.UserDetails.Size = new System.Drawing.Size(351, 316);
             this.UserDetails.TabIndex = 5;
             this.UserDetails.Text = "UserDetails";
             this.UserDetails.UseVisualStyleBackColor = true;
@@ -516,6 +521,7 @@
             // 
             this.UserDetails_Sex_txt.Location = new System.Drawing.Point(149, 102);
             this.UserDetails_Sex_txt.Name = "UserDetails_Sex_txt";
+            this.UserDetails_Sex_txt.ReadOnly = true;
             this.UserDetails_Sex_txt.Size = new System.Drawing.Size(137, 20);
             this.UserDetails_Sex_txt.TabIndex = 19;
             // 
@@ -523,6 +529,7 @@
             // 
             this.UserDetails_Work_txt.Location = new System.Drawing.Point(149, 170);
             this.UserDetails_Work_txt.Name = "UserDetails_Work_txt";
+            this.UserDetails_Work_txt.ReadOnly = true;
             this.UserDetails_Work_txt.Size = new System.Drawing.Size(137, 20);
             this.UserDetails_Work_txt.TabIndex = 18;
             // 
@@ -530,6 +537,7 @@
             // 
             this.UserDetails_Age_txt.Location = new System.Drawing.Point(149, 67);
             this.UserDetails_Age_txt.Name = "UserDetails_Age_txt";
+            this.UserDetails_Age_txt.ReadOnly = true;
             this.UserDetails_Age_txt.Size = new System.Drawing.Size(137, 20);
             this.UserDetails_Age_txt.TabIndex = 17;
             // 
@@ -537,6 +545,7 @@
             // 
             this.UserDetails_Password_txt.Location = new System.Drawing.Point(149, 135);
             this.UserDetails_Password_txt.Name = "UserDetails_Password_txt";
+            this.UserDetails_Password_txt.ReadOnly = true;
             this.UserDetails_Password_txt.Size = new System.Drawing.Size(137, 20);
             this.UserDetails_Password_txt.TabIndex = 16;
             // 
@@ -544,35 +553,29 @@
             // 
             this.UserDetails_Name_txt.Location = new System.Drawing.Point(149, 32);
             this.UserDetails_Name_txt.Name = "UserDetails_Name_txt";
+            this.UserDetails_Name_txt.ReadOnly = true;
             this.UserDetails_Name_txt.Size = new System.Drawing.Size(137, 20);
             this.UserDetails_Name_txt.TabIndex = 14;
             // 
-            // UserDetails_EditData_Buttom
-            // 
-            this.UserDetails_EditData_Buttom.Location = new System.Drawing.Point(140, 222);
-            this.UserDetails_EditData_Buttom.Name = "UserDetails_EditData_Buttom";
-            this.UserDetails_EditData_Buttom.Size = new System.Drawing.Size(85, 35);
-            this.UserDetails_EditData_Buttom.TabIndex = 13;
-            this.UserDetails_EditData_Buttom.Text = "Editar Datos";
-            this.UserDetails_EditData_Buttom.UseVisualStyleBackColor = true;
-            // 
             // UserDetails_SeeGroup_Buttom
             // 
-            this.UserDetails_SeeGroup_Buttom.Location = new System.Drawing.Point(254, 222);
+            this.UserDetails_SeeGroup_Buttom.Location = new System.Drawing.Point(222, 222);
             this.UserDetails_SeeGroup_Buttom.Name = "UserDetails_SeeGroup_Buttom";
             this.UserDetails_SeeGroup_Buttom.Size = new System.Drawing.Size(85, 35);
             this.UserDetails_SeeGroup_Buttom.TabIndex = 12;
             this.UserDetails_SeeGroup_Buttom.Text = "Ver Grupo";
             this.UserDetails_SeeGroup_Buttom.UseVisualStyleBackColor = true;
+            this.UserDetails_SeeGroup_Buttom.Click += new System.EventHandler(this.UserDetails_SeeGroup_Buttom_Click);
             // 
             // UserDetails_Back_Buttom
             // 
-            this.UserDetails_Back_Buttom.Location = new System.Drawing.Point(29, 222);
+            this.UserDetails_Back_Buttom.Location = new System.Drawing.Point(59, 222);
             this.UserDetails_Back_Buttom.Name = "UserDetails_Back_Buttom";
             this.UserDetails_Back_Buttom.Size = new System.Drawing.Size(85, 35);
             this.UserDetails_Back_Buttom.TabIndex = 11;
             this.UserDetails_Back_Buttom.Text = "Regresar";
             this.UserDetails_Back_Buttom.UseVisualStyleBackColor = true;
+            this.UserDetails_Back_Buttom.Click += new System.EventHandler(this.UserDetails_Back_Buttom_Click);
             // 
             // label17
             // 
@@ -627,14 +630,14 @@
             // GroupUser
             // 
             this.GroupUser.Controls.Add(this.button11);
-            this.GroupUser.Controls.Add(this.button10);
-            this.GroupUser.Controls.Add(this.button9);
-            this.GroupUser.Controls.Add(this.button8);
-            this.GroupUser.Controls.Add(this.button7);
-            this.GroupUser.Controls.Add(this.button6);
-            this.GroupUser.Controls.Add(this.button5);
-            this.GroupUser.Controls.Add(this.button4);
-            this.GroupUser.Controls.Add(this.button3);
+            this.GroupUser.Controls.Add(this.GroupUser_X8_Buttom);
+            this.GroupUser.Controls.Add(this.GroupUser_X7_Buttom);
+            this.GroupUser.Controls.Add(this.GroupUser_X6_Buttom);
+            this.GroupUser.Controls.Add(this.GroupUser_X5_Buttom);
+            this.GroupUser.Controls.Add(this.GroupUser_X4_Buttom);
+            this.GroupUser.Controls.Add(this.GroupUser_X3_Buttom);
+            this.GroupUser.Controls.Add(this.GroupUser_X2_Buttom);
+            this.GroupUser.Controls.Add(this.GroupUser_X1_Buttom);
             this.GroupUser.Controls.Add(this.label25);
             this.GroupUser.Controls.Add(this.label24);
             this.GroupUser.Controls.Add(this.label23);
@@ -644,18 +647,18 @@
             this.GroupUser.Controls.Add(this.label19);
             this.GroupUser.Controls.Add(this.label18);
             this.GroupUser.Controls.Add(this.label6);
-            this.GroupUser.Controls.Add(this.textBox9);
-            this.GroupUser.Controls.Add(this.textBox8);
-            this.GroupUser.Controls.Add(this.textBox7);
-            this.GroupUser.Controls.Add(this.textBox6);
-            this.GroupUser.Controls.Add(this.textBox5);
-            this.GroupUser.Controls.Add(this.textBox4);
-            this.GroupUser.Controls.Add(this.textBox3);
-            this.GroupUser.Controls.Add(this.textBox2);
-            this.GroupUser.Controls.Add(this.textBox1);
+            this.GroupUser.Controls.Add(this.GroupUser_AS6_txt);
+            this.GroupUser.Controls.Add(this.GroupUser_AS7_txt);
+            this.GroupUser.Controls.Add(this.GroupUser_AS8_txt);
+            this.GroupUser.Controls.Add(this.GroupUser_AS1_txt);
+            this.GroupUser.Controls.Add(this.GroupUser_AS2_txt);
+            this.GroupUser.Controls.Add(this.GroupUser_AS3_txt);
+            this.GroupUser.Controls.Add(this.GroupUser_AS4_txt);
+            this.GroupUser.Controls.Add(this.GroupUser_AS5_txt);
+            this.GroupUser.Controls.Add(this.GroupUser_Par_Txt);
             this.GroupUser.Location = new System.Drawing.Point(4, 22);
             this.GroupUser.Name = "GroupUser";
-            this.GroupUser.Size = new System.Drawing.Size(351, 317);
+            this.GroupUser.Size = new System.Drawing.Size(351, 316);
             this.GroupUser.TabIndex = 6;
             this.GroupUser.Text = "GroupUser";
             this.GroupUser.UseVisualStyleBackColor = true;
@@ -668,78 +671,87 @@
             this.button11.TabIndex = 26;
             this.button11.Text = "Regresar";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
-            // button10
+            // GroupUser_X8_Buttom
             // 
-            this.button10.Location = new System.Drawing.Point(315, 235);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(20, 20);
-            this.button10.TabIndex = 25;
-            this.button10.Text = "X";
-            this.button10.UseVisualStyleBackColor = true;
+            this.GroupUser_X8_Buttom.Location = new System.Drawing.Point(315, 235);
+            this.GroupUser_X8_Buttom.Name = "GroupUser_X8_Buttom";
+            this.GroupUser_X8_Buttom.Size = new System.Drawing.Size(20, 20);
+            this.GroupUser_X8_Buttom.TabIndex = 25;
+            this.GroupUser_X8_Buttom.Text = "X";
+            this.GroupUser_X8_Buttom.UseVisualStyleBackColor = true;
+            this.GroupUser_X8_Buttom.Click += new System.EventHandler(this.GroupUser_X8_Buttom_Click);
             // 
-            // button9
+            // GroupUser_X7_Buttom
             // 
-            this.button9.Location = new System.Drawing.Point(315, 209);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(20, 20);
-            this.button9.TabIndex = 24;
-            this.button9.Text = "X";
-            this.button9.UseVisualStyleBackColor = true;
+            this.GroupUser_X7_Buttom.Location = new System.Drawing.Point(315, 209);
+            this.GroupUser_X7_Buttom.Name = "GroupUser_X7_Buttom";
+            this.GroupUser_X7_Buttom.Size = new System.Drawing.Size(20, 20);
+            this.GroupUser_X7_Buttom.TabIndex = 24;
+            this.GroupUser_X7_Buttom.Text = "X";
+            this.GroupUser_X7_Buttom.UseVisualStyleBackColor = true;
+            this.GroupUser_X7_Buttom.Click += new System.EventHandler(this.GroupUser_X7_Buttom_Click);
             // 
-            // button8
+            // GroupUser_X6_Buttom
             // 
-            this.button8.Location = new System.Drawing.Point(315, 183);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(20, 20);
-            this.button8.TabIndex = 23;
-            this.button8.Text = "X";
-            this.button8.UseVisualStyleBackColor = true;
+            this.GroupUser_X6_Buttom.Location = new System.Drawing.Point(315, 183);
+            this.GroupUser_X6_Buttom.Name = "GroupUser_X6_Buttom";
+            this.GroupUser_X6_Buttom.Size = new System.Drawing.Size(20, 20);
+            this.GroupUser_X6_Buttom.TabIndex = 23;
+            this.GroupUser_X6_Buttom.Text = "X";
+            this.GroupUser_X6_Buttom.UseVisualStyleBackColor = true;
+            this.GroupUser_X6_Buttom.Click += new System.EventHandler(this.GroupUser_X6_Buttom_Click);
             // 
-            // button7
+            // GroupUser_X5_Buttom
             // 
-            this.button7.Location = new System.Drawing.Point(315, 157);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(20, 20);
-            this.button7.TabIndex = 22;
-            this.button7.Text = "X";
-            this.button7.UseVisualStyleBackColor = true;
+            this.GroupUser_X5_Buttom.Location = new System.Drawing.Point(315, 157);
+            this.GroupUser_X5_Buttom.Name = "GroupUser_X5_Buttom";
+            this.GroupUser_X5_Buttom.Size = new System.Drawing.Size(20, 20);
+            this.GroupUser_X5_Buttom.TabIndex = 22;
+            this.GroupUser_X5_Buttom.Text = "X";
+            this.GroupUser_X5_Buttom.UseVisualStyleBackColor = true;
+            this.GroupUser_X5_Buttom.Click += new System.EventHandler(this.GroupUser_X5_Buttom_Click);
             // 
-            // button6
+            // GroupUser_X4_Buttom
             // 
-            this.button6.Location = new System.Drawing.Point(315, 131);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(20, 20);
-            this.button6.TabIndex = 21;
-            this.button6.Text = "X";
-            this.button6.UseVisualStyleBackColor = true;
+            this.GroupUser_X4_Buttom.Location = new System.Drawing.Point(315, 131);
+            this.GroupUser_X4_Buttom.Name = "GroupUser_X4_Buttom";
+            this.GroupUser_X4_Buttom.Size = new System.Drawing.Size(20, 20);
+            this.GroupUser_X4_Buttom.TabIndex = 21;
+            this.GroupUser_X4_Buttom.Text = "X";
+            this.GroupUser_X4_Buttom.UseVisualStyleBackColor = true;
+            this.GroupUser_X4_Buttom.Click += new System.EventHandler(this.GroupUser_X4_Buttom_Click);
             // 
-            // button5
+            // GroupUser_X3_Buttom
             // 
-            this.button5.Location = new System.Drawing.Point(315, 105);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(20, 20);
-            this.button5.TabIndex = 20;
-            this.button5.Text = "X";
-            this.button5.UseVisualStyleBackColor = true;
+            this.GroupUser_X3_Buttom.Location = new System.Drawing.Point(315, 105);
+            this.GroupUser_X3_Buttom.Name = "GroupUser_X3_Buttom";
+            this.GroupUser_X3_Buttom.Size = new System.Drawing.Size(20, 20);
+            this.GroupUser_X3_Buttom.TabIndex = 20;
+            this.GroupUser_X3_Buttom.Text = "X";
+            this.GroupUser_X3_Buttom.UseVisualStyleBackColor = true;
+            this.GroupUser_X3_Buttom.Click += new System.EventHandler(this.GroupUser_X3_Buttom_Click);
             // 
-            // button4
+            // GroupUser_X2_Buttom
             // 
-            this.button4.Location = new System.Drawing.Point(315, 79);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(20, 20);
-            this.button4.TabIndex = 19;
-            this.button4.Text = "X";
-            this.button4.UseVisualStyleBackColor = true;
+            this.GroupUser_X2_Buttom.Location = new System.Drawing.Point(315, 79);
+            this.GroupUser_X2_Buttom.Name = "GroupUser_X2_Buttom";
+            this.GroupUser_X2_Buttom.Size = new System.Drawing.Size(20, 20);
+            this.GroupUser_X2_Buttom.TabIndex = 19;
+            this.GroupUser_X2_Buttom.Text = "X";
+            this.GroupUser_X2_Buttom.UseVisualStyleBackColor = true;
+            this.GroupUser_X2_Buttom.Click += new System.EventHandler(this.GroupUser_X2_Buttom_Click);
             // 
-            // button3
+            // GroupUser_X1_Buttom
             // 
-            this.button3.Location = new System.Drawing.Point(315, 53);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(20, 20);
-            this.button3.TabIndex = 18;
-            this.button3.Text = "X";
-            this.button3.UseVisualStyleBackColor = true;
+            this.GroupUser_X1_Buttom.Location = new System.Drawing.Point(315, 53);
+            this.GroupUser_X1_Buttom.Name = "GroupUser_X1_Buttom";
+            this.GroupUser_X1_Buttom.Size = new System.Drawing.Size(20, 20);
+            this.GroupUser_X1_Buttom.TabIndex = 18;
+            this.GroupUser_X1_Buttom.Text = "X";
+            this.GroupUser_X1_Buttom.UseVisualStyleBackColor = true;
+            this.GroupUser_X1_Buttom.Click += new System.EventHandler(this.GroupUser_X1_Buttom_Click);
             // 
             // label25
             // 
@@ -822,68 +834,77 @@
             this.label6.TabIndex = 9;
             this.label6.Text = "Parlamentario";
             // 
-            // textBox9
+            // GroupUser_AS6_txt
             // 
-            this.textBox9.Location = new System.Drawing.Point(107, 183);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(202, 20);
-            this.textBox9.TabIndex = 8;
+            this.GroupUser_AS6_txt.Location = new System.Drawing.Point(107, 183);
+            this.GroupUser_AS6_txt.Name = "GroupUser_AS6_txt";
+            this.GroupUser_AS6_txt.ReadOnly = true;
+            this.GroupUser_AS6_txt.Size = new System.Drawing.Size(202, 20);
+            this.GroupUser_AS6_txt.TabIndex = 8;
             // 
-            // textBox8
+            // GroupUser_AS7_txt
             // 
-            this.textBox8.Location = new System.Drawing.Point(107, 209);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(202, 20);
-            this.textBox8.TabIndex = 7;
+            this.GroupUser_AS7_txt.Location = new System.Drawing.Point(107, 209);
+            this.GroupUser_AS7_txt.Name = "GroupUser_AS7_txt";
+            this.GroupUser_AS7_txt.ReadOnly = true;
+            this.GroupUser_AS7_txt.Size = new System.Drawing.Size(202, 20);
+            this.GroupUser_AS7_txt.TabIndex = 7;
             // 
-            // textBox7
+            // GroupUser_AS8_txt
             // 
-            this.textBox7.Location = new System.Drawing.Point(107, 235);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(202, 20);
-            this.textBox7.TabIndex = 6;
+            this.GroupUser_AS8_txt.Location = new System.Drawing.Point(107, 235);
+            this.GroupUser_AS8_txt.Name = "GroupUser_AS8_txt";
+            this.GroupUser_AS8_txt.ReadOnly = true;
+            this.GroupUser_AS8_txt.Size = new System.Drawing.Size(202, 20);
+            this.GroupUser_AS8_txt.TabIndex = 6;
             // 
-            // textBox6
+            // GroupUser_AS1_txt
             // 
-            this.textBox6.Location = new System.Drawing.Point(107, 53);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(202, 20);
-            this.textBox6.TabIndex = 5;
+            this.GroupUser_AS1_txt.Location = new System.Drawing.Point(107, 53);
+            this.GroupUser_AS1_txt.Name = "GroupUser_AS1_txt";
+            this.GroupUser_AS1_txt.ReadOnly = true;
+            this.GroupUser_AS1_txt.Size = new System.Drawing.Size(202, 20);
+            this.GroupUser_AS1_txt.TabIndex = 5;
             // 
-            // textBox5
+            // GroupUser_AS2_txt
             // 
-            this.textBox5.Location = new System.Drawing.Point(107, 79);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(202, 20);
-            this.textBox5.TabIndex = 4;
+            this.GroupUser_AS2_txt.Location = new System.Drawing.Point(107, 79);
+            this.GroupUser_AS2_txt.Name = "GroupUser_AS2_txt";
+            this.GroupUser_AS2_txt.ReadOnly = true;
+            this.GroupUser_AS2_txt.Size = new System.Drawing.Size(202, 20);
+            this.GroupUser_AS2_txt.TabIndex = 4;
             // 
-            // textBox4
+            // GroupUser_AS3_txt
             // 
-            this.textBox4.Location = new System.Drawing.Point(107, 105);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(202, 20);
-            this.textBox4.TabIndex = 3;
+            this.GroupUser_AS3_txt.Location = new System.Drawing.Point(107, 105);
+            this.GroupUser_AS3_txt.Name = "GroupUser_AS3_txt";
+            this.GroupUser_AS3_txt.ReadOnly = true;
+            this.GroupUser_AS3_txt.Size = new System.Drawing.Size(202, 20);
+            this.GroupUser_AS3_txt.TabIndex = 3;
             // 
-            // textBox3
+            // GroupUser_AS4_txt
             // 
-            this.textBox3.Location = new System.Drawing.Point(107, 131);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(202, 20);
-            this.textBox3.TabIndex = 2;
+            this.GroupUser_AS4_txt.Location = new System.Drawing.Point(107, 131);
+            this.GroupUser_AS4_txt.Name = "GroupUser_AS4_txt";
+            this.GroupUser_AS4_txt.ReadOnly = true;
+            this.GroupUser_AS4_txt.Size = new System.Drawing.Size(202, 20);
+            this.GroupUser_AS4_txt.TabIndex = 2;
             // 
-            // textBox2
+            // GroupUser_AS5_txt
             // 
-            this.textBox2.Location = new System.Drawing.Point(107, 157);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(202, 20);
-            this.textBox2.TabIndex = 1;
+            this.GroupUser_AS5_txt.Location = new System.Drawing.Point(107, 157);
+            this.GroupUser_AS5_txt.Name = "GroupUser_AS5_txt";
+            this.GroupUser_AS5_txt.ReadOnly = true;
+            this.GroupUser_AS5_txt.Size = new System.Drawing.Size(202, 20);
+            this.GroupUser_AS5_txt.TabIndex = 1;
             // 
-            // textBox1
+            // GroupUser_Par_Txt
             // 
-            this.textBox1.Location = new System.Drawing.Point(88, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(174, 20);
-            this.textBox1.TabIndex = 0;
+            this.GroupUser_Par_Txt.Location = new System.Drawing.Point(86, 18);
+            this.GroupUser_Par_Txt.Name = "GroupUser_Par_Txt";
+            this.GroupUser_Par_Txt.ReadOnly = true;
+            this.GroupUser_Par_Txt.Size = new System.Drawing.Size(174, 20);
+            this.GroupUser_Par_Txt.TabIndex = 0;
             // 
             // Law
             // 
@@ -894,7 +915,7 @@
             this.Law.Controls.Add(this.button12);
             this.Law.Location = new System.Drawing.Point(4, 22);
             this.Law.Name = "Law";
-            this.Law.Size = new System.Drawing.Size(351, 317);
+            this.Law.Size = new System.Drawing.Size(351, 316);
             this.Law.TabIndex = 3;
             this.Law.Text = "Law";
             this.Law.UseVisualStyleBackColor = true;
@@ -952,7 +973,7 @@
             this.SeeLaws.Controls.Add(this.button17);
             this.SeeLaws.Location = new System.Drawing.Point(4, 22);
             this.SeeLaws.Name = "SeeLaws";
-            this.SeeLaws.Size = new System.Drawing.Size(351, 317);
+            this.SeeLaws.Size = new System.Drawing.Size(351, 316);
             this.SeeLaws.TabIndex = 7;
             this.SeeLaws.Text = "SeeLaws";
             this.SeeLaws.UseVisualStyleBackColor = true;
@@ -993,7 +1014,7 @@
             this.CreateLaws.Controls.Add(this.label27);
             this.CreateLaws.Location = new System.Drawing.Point(4, 22);
             this.CreateLaws.Name = "CreateLaws";
-            this.CreateLaws.Size = new System.Drawing.Size(351, 317);
+            this.CreateLaws.Size = new System.Drawing.Size(351, 316);
             this.CreateLaws.TabIndex = 8;
             this.CreateLaws.Text = "CreateLaws";
             this.CreateLaws.UseVisualStyleBackColor = true;
@@ -1057,7 +1078,7 @@
             this.DeleteLaws.Controls.Add(this.comboBox1);
             this.DeleteLaws.Location = new System.Drawing.Point(4, 22);
             this.DeleteLaws.Name = "DeleteLaws";
-            this.DeleteLaws.Size = new System.Drawing.Size(351, 317);
+            this.DeleteLaws.Size = new System.Drawing.Size(351, 316);
             this.DeleteLaws.TabIndex = 9;
             this.DeleteLaws.Text = "DeleteLaws";
             this.DeleteLaws.UseVisualStyleBackColor = true;
@@ -1102,7 +1123,7 @@
             // 
             this.RentLaws.Location = new System.Drawing.Point(4, 22);
             this.RentLaws.Name = "RentLaws";
-            this.RentLaws.Size = new System.Drawing.Size(351, 317);
+            this.RentLaws.Size = new System.Drawing.Size(351, 316);
             this.RentLaws.TabIndex = 10;
             this.RentLaws.Text = "RentLaws";
             this.RentLaws.UseVisualStyleBackColor = true;
@@ -1116,7 +1137,7 @@
             this.Regulations.Controls.Add(this.label31);
             this.Regulations.Location = new System.Drawing.Point(4, 22);
             this.Regulations.Name = "Regulations";
-            this.Regulations.Size = new System.Drawing.Size(351, 317);
+            this.Regulations.Size = new System.Drawing.Size(351, 316);
             this.Regulations.TabIndex = 4;
             this.Regulations.Text = "Regulations";
             this.Regulations.UseVisualStyleBackColor = true;
@@ -1174,7 +1195,7 @@
             this.SeeRegulations.Controls.Add(this.label32);
             this.SeeRegulations.Location = new System.Drawing.Point(4, 22);
             this.SeeRegulations.Name = "SeeRegulations";
-            this.SeeRegulations.Size = new System.Drawing.Size(351, 317);
+            this.SeeRegulations.Size = new System.Drawing.Size(351, 316);
             this.SeeRegulations.TabIndex = 12;
             this.SeeRegulations.Text = "SeeRegulations";
             this.SeeRegulations.UseVisualStyleBackColor = true;
@@ -1211,7 +1232,7 @@
             this.CreateRegulations.Controls.Add(this.label33);
             this.CreateRegulations.Location = new System.Drawing.Point(4, 22);
             this.CreateRegulations.Name = "CreateRegulations";
-            this.CreateRegulations.Size = new System.Drawing.Size(351, 317);
+            this.CreateRegulations.Size = new System.Drawing.Size(351, 316);
             this.CreateRegulations.TabIndex = 13;
             this.CreateRegulations.Text = "CreateRegulations";
             this.CreateRegulations.UseVisualStyleBackColor = true;
@@ -1238,7 +1259,7 @@
             // 
             this.DeleteRegulations.Location = new System.Drawing.Point(4, 22);
             this.DeleteRegulations.Name = "DeleteRegulations";
-            this.DeleteRegulations.Size = new System.Drawing.Size(351, 317);
+            this.DeleteRegulations.Size = new System.Drawing.Size(351, 316);
             this.DeleteRegulations.TabIndex = 14;
             this.DeleteRegulations.Text = "DeleteRegulations";
             this.DeleteRegulations.UseVisualStyleBackColor = true;
@@ -1247,17 +1268,10 @@
             // 
             this.RentRegulations.Location = new System.Drawing.Point(4, 22);
             this.RentRegulations.Name = "RentRegulations";
-            this.RentRegulations.Size = new System.Drawing.Size(351, 317);
+            this.RentRegulations.Size = new System.Drawing.Size(351, 316);
             this.RentRegulations.TabIndex = 15;
             this.RentRegulations.Text = "RentRegulations";
             this.RentRegulations.UseVisualStyleBackColor = true;
-            // 
-            // CreateANEwUser_AsociatedP_txt
-            // 
-            this.CreateANEwUser_AsociatedP_txt.Location = new System.Drawing.Point(175, 198);
-            this.CreateANEwUser_AsociatedP_txt.Name = "CreateANEwUser_AsociatedP_txt";
-            this.CreateANEwUser_AsociatedP_txt.Size = new System.Drawing.Size(139, 20);
-            this.CreateANEwUser_AsociatedP_txt.TabIndex = 21;
             // 
             // Form1
             // 
@@ -1344,7 +1358,6 @@
         private System.Windows.Forms.TextBox UserDetails_Age_txt;
         private System.Windows.Forms.TextBox UserDetails_Password_txt;
         private System.Windows.Forms.TextBox UserDetails_Name_txt;
-        private System.Windows.Forms.Button UserDetails_EditData_Buttom;
         private System.Windows.Forms.Button UserDetails_SeeGroup_Buttom;
         private System.Windows.Forms.Button UserDetails_Back_Buttom;
         private System.Windows.Forms.Label label17;
@@ -1352,14 +1365,14 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button GroupUser_X8_Buttom;
+        private System.Windows.Forms.Button GroupUser_X7_Buttom;
+        private System.Windows.Forms.Button GroupUser_X6_Buttom;
+        private System.Windows.Forms.Button GroupUser_X5_Buttom;
+        private System.Windows.Forms.Button GroupUser_X4_Buttom;
+        private System.Windows.Forms.Button GroupUser_X3_Buttom;
+        private System.Windows.Forms.Button GroupUser_X2_Buttom;
+        private System.Windows.Forms.Button GroupUser_X1_Buttom;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
@@ -1369,15 +1382,15 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox GroupUser_AS6_txt;
+        private System.Windows.Forms.TextBox GroupUser_AS7_txt;
+        private System.Windows.Forms.TextBox GroupUser_AS8_txt;
+        private System.Windows.Forms.TextBox GroupUser_AS1_txt;
+        private System.Windows.Forms.TextBox GroupUser_AS2_txt;
+        private System.Windows.Forms.TextBox GroupUser_AS3_txt;
+        private System.Windows.Forms.TextBox GroupUser_AS4_txt;
+        private System.Windows.Forms.TextBox GroupUser_AS5_txt;
+        private System.Windows.Forms.TextBox GroupUser_Par_Txt;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button14;

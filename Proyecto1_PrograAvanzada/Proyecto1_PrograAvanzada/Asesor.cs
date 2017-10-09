@@ -31,6 +31,14 @@ namespace Proyecto1_PrograAvanzada
         {
             return Password;
         }//Regresa la contraseña
+        public int ReturnAge()
+        {
+            return Age;
+        }//Regresa la edad
+        public string ReturnSex()
+        {
+            return Sex;
+        }//Regresa el sexo
         public void Remove()
         {
             Name = "";
@@ -38,5 +46,13 @@ namespace Proyecto1_PrograAvanzada
             Sex = "";
             Password = "";
         }//Borra la Informacion de un Asesor
+        //sacar las leyes
+        public void SaveData(int _Age, string _Sex, string _Password)
+        {
+            Age = _Age;
+            Sex = _Sex;
+            Password = _Password;
+        }
+
     }
 }

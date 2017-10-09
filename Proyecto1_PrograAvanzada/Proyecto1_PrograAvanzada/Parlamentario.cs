@@ -32,7 +32,19 @@ namespace Proyecto1_PrograAvanzada
         {
             return Password;
         }//Retorna la contraseña
-        public string SearchInAdvisors(string name)
+        public int ReturnAge()
+        {
+            return Age;
+        }//Regresa la edad
+        public string ReturnSex()
+        {
+            return Sex;
+        }//Regresa el sexo
+        public Asesor listadoDeAsesores(int i)
+        {
+            return Asesores[i];
+        }//regresa el asesor indicado 
+        public string SearchPasswordOfAdvisor(string name)
         {
             for (int i = 0; i < 8; i++)
             {
@@ -42,7 +54,7 @@ namespace Proyecto1_PrograAvanzada
                 }
             }
             return "PasswordNotFound";
-        }
+        }//Retorna la contraseña de un asesor
         public Asesor SearchAdvisors(string name)
         {
             for (int i = 0; i < 7; i++)
@@ -53,15 +65,21 @@ namespace Proyecto1_PrograAvanzada
                 }
             }
             return Asesores[7];
-        }
+        }//Retorna el objeto asesor
         public void AddToAdvisor(Asesor AS)
         {
+            bool asignado = false;
             for (int i = 0; i < 8; i++)
             {
-                if(Asesores[i].ReturnName() == "")
+                if(Asesores[i].ReturnName() == "" && asignado == false)
                 {
                     Asesores[i] = AS;
+                    asignado = true;
                 }
+            }
+            if (asignado == false)
+            {
+                System.Windows.Forms.MessageBox.Show("Usted no tiene espacios disponibles para mas asesores");
             }
         }//Añade un asesor al diputado
         public void RemoveFromAdvisor(Asesor AS)
@@ -73,6 +91,20 @@ namespace Proyecto1_PrograAvanzada
                     Asesores[i].Remove();
                 }
             }
-        }///Borra la informacion existente de un asesor
+            Array.Sort(Asesores);
+        }//Borra la informacion existente de un asesor
+        public void SaveData(int _Age, string _Sex, string _Password)
+        {
+            Age = _Age;
+            Sex = _Sex;
+            Password = _Password;
+        }
+        public void InicializarAsesores()
+        {
+            for (int i = 0; i < 8; i++)
+            {
+                Asesores[i] = new Asesor("", 0, "", "");
+            }
+        }//Crea el espacio para los asesores
     }
 }
