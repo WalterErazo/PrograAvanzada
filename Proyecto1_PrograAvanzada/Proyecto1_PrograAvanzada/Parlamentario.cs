@@ -93,12 +93,6 @@ namespace Proyecto1_PrograAvanzada
             }
             Array.Sort(Asesores);
         }//Borra la informacion existente de un asesor
-        public void SaveData(int _Age, string _Sex, string _Password)
-        {
-            Age = _Age;
-            Sex = _Sex;
-            Password = _Password;
-        }
         public void InicializarAsesores()
         {
             for (int i = 0; i < 8; i++)
@@ -106,5 +100,12 @@ namespace Proyecto1_PrograAvanzada
                 Asesores[i] = new Asesor("", 0, "", "");
             }
         }//Crea el espacio para los asesores
+
+        public void SaveData(int _Age, string _Sex, string _Password)
+        {
+            Age = _Age;
+            Sex = _Sex;
+            Password = _Password;
+        }//Inservible
     }
 }

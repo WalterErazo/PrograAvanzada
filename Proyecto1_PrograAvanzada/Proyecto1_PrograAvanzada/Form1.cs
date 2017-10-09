@@ -73,15 +73,22 @@ namespace Proyecto1_PrograAvanzada
                 {
                     TempPar = new Parlamentario(CreateANewUser_Name_txt.Text, int.Parse(CreateANewUser_Age_txt.Text), CreateANewUser_Sex_Combobox.Text, CreateANewUser_password_txt.Text);
                     Goathemala.addParlamentario(TempPar);
+                    ClearCreateANewUser();
                     A.SelectTab(2);
                 }
                 else
                 {
                     TempAse = new Asesor(CreateANewUser_Name_txt.Text, int.Parse(CreateANewUser_Age_txt.Text), CreateANewUser_Sex_Combobox.Text, CreateANewUser_password_txt.Text);
-                    AsociarAParlamentario(CreateANEwUser_AsociatedP_txt.Text, TempAse);
+                    if (AsociarAParlamentario(CreateANEwUser_AsociatedP_txt.Text, TempAse) == 0)
+                    {
+                        ClearCreateANewUser();
+                        A.SelectTab(2);
+                    }
+                    else
+                    {
+                        MessageBox.Show("El asesor que usted nos indico no existe");
+                    }
                 }
-                ClearCreateANewUser();
-                A.SelectTab(2);
             }
             else
             {
@@ -148,7 +155,7 @@ namespace Proyecto1_PrograAvanzada
         }//regresa a la principal
         private void UserDetails_SeeGroup_Buttom_Click(object sender, EventArgs e)
         {
-            A.SelectTab(5);
+            A.SelectTab(4);
             if (Act_Work == "Parlamentario")
             {
                 GroupUser_Par_Txt.Text = TempPar.ReturnName();
@@ -195,48 +202,48 @@ namespace Proyecto1_PrograAvanzada
         //---------------------------GroupUser---------------------------------------
         private void button11_Click(object sender, EventArgs e)
         {
-            A.SelectTab(4);
-        }
+            A.SelectTab(3);
+        }//Regresa
         private void GroupUser_X1_Buttom_Click(object sender, EventArgs e)
         {
             TempPar.listadoDeAsesores(0).Remove();
             GroupUser_AS1_txt.Text = TempPar.listadoDeAsesores(0).ReturnName();
-        }
+        }//Elimia Asesor
         private void GroupUser_X2_Buttom_Click(object sender, EventArgs e)
         {
             TempPar.listadoDeAsesores(1).Remove();
             GroupUser_AS2_txt.Text = TempPar.listadoDeAsesores(1).ReturnName();
-        }
+        }//Elimia Asesor
         private void GroupUser_X3_Buttom_Click(object sender, EventArgs e)
         {
             TempPar.listadoDeAsesores(2).Remove();
             GroupUser_AS3_txt.Text = TempPar.listadoDeAsesores(2).ReturnName();
-        }
+        }//Elimia Asesor
         private void GroupUser_X4_Buttom_Click(object sender, EventArgs e)
         {
             TempPar.listadoDeAsesores(3).Remove();
             GroupUser_AS4_txt.Text = TempPar.listadoDeAsesores(3).ReturnName();
-        }
+        }//Elimia Asesor
         private void GroupUser_X5_Buttom_Click(object sender, EventArgs e)
         {
             TempPar.listadoDeAsesores(4).Remove();
             GroupUser_AS5_txt.Text = TempPar.listadoDeAsesores(4).ReturnName();
-        }
+        }//Elimia Asesor
         private void GroupUser_X6_Buttom_Click(object sender, EventArgs e)
         {
             TempPar.listadoDeAsesores(5).Remove();
             GroupUser_AS6_txt.Text = TempPar.listadoDeAsesores(5).ReturnName();
-        }
+        }//Elimia Asesor
         private void GroupUser_X7_Buttom_Click(object sender, EventArgs e)
         {
             TempPar.listadoDeAsesores(6).Remove();
             GroupUser_AS7_txt.Text = TempPar.listadoDeAsesores(6).ReturnName();
-        }
+        }//Elimia Asesor
         private void GroupUser_X8_Buttom_Click(object sender, EventArgs e)
         {
             TempPar.listadoDeAsesores(7).Remove();
             GroupUser_AS8_txt.Text = TempPar.listadoDeAsesores(7).ReturnName();
-        }
+        }//Elimia Asesor
         //---------------------------GroupUser---------------------------------------
 
 
@@ -296,9 +303,9 @@ namespace Proyecto1_PrograAvanzada
         {
             return Goathemala.SParlamentario(Act_Name);
         }//Busca el objeto parlamentario
-        void AsociarAParlamentario(string ParName, Asesor AS)
+        int AsociarAParlamentario(string ParName, Asesor AS)
         {
-            Goathemala.AsociarAParlamentario(ParName, AS);
+            return Goathemala.AsociarAParlamentario(ParName, AS);
         }//Asocia un asesor a un parlamentario
         void SavedataParlamentario()
         {

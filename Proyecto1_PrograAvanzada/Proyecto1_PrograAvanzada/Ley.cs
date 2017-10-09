@@ -11,6 +11,5 @@ namespace Proyecto1_PrograAvanzada
         string Name;
         string Description;
         int Copies = 5;
-
     }
 }

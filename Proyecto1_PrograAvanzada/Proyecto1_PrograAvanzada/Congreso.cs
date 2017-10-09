@@ -78,21 +78,23 @@ namespace Proyecto1_PrograAvanzada
             nunca se llegara a este segundo return*/
             return Congress[100].SearchAdvisors(nname); ;
         }
-        public void AsociarAParlamentario(string ParName, Asesor AS)
+        public int AsociarAParlamentario(string ParName, Asesor AS)
         {
             for (int i = 0; i <= cont; i++)
             {
                 if (ParName == Congress[i].ReturnName())//Busca al parlamentario
                 {
                     Congress[i].AddToAdvisor(AS);
+                    return 0;//Retorna 0 si se logro asignar correctamente
                 }
             }
+            return -1;//Retrona menos 1 si no hay ningun parlamentario llamado asi
         }
         public void InicializarCongreso()
         {
             for (int i = 0; i < 100; i++)
             {
-                Congress[i] = new Parlamentario("", 0, "", "");
+                Congress[i] = new Parlamentario("USUARIOVACIO", 0, "", "");
             }
         }
         public Parlamentario getParlamentarioConUnAsesor(string AsName)
