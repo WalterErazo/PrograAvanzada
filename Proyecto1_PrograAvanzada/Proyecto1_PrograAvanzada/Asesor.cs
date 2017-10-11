@@ -13,7 +13,8 @@ namespace Proyecto1_PrograAvanzada
         private string Sex;
         private string Password;
         public bool CanEdit = false;
-        private Ley[] LeyesEnAlquiler = new Ley[50];
+        public Ley[] LeyesEnAlquiler = new Ley[0];
+        public Reglamento[] ReglamentosEnAlquiler = new Reglamento[0];
 
 
         public Asesor(string _Name, int _Age, string _Sex, string _Password)
@@ -46,13 +47,10 @@ namespace Proyecto1_PrograAvanzada
             Sex = "";
             Password = "";
         }//Borra la Informacion de un Asesor
+
+
         //sacar las leyes
-        public void SaveData(int _Age, string _Sex, string _Password)
-        {
-            Age = _Age;
-            Sex = _Sex;
-            Password = _Password;
-        }
+
 
     }
 }

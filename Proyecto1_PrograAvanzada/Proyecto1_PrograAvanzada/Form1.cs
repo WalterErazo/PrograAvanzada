@@ -15,7 +15,6 @@ namespace Proyecto1_PrograAvanzada
         public Form1()
         {
             InitializeComponent();
-            Goathemala.InicializarCongreso();
         }
         Congreso Goathemala = new Congreso();
         Parlamentario TempPar;
@@ -23,15 +22,15 @@ namespace Proyecto1_PrograAvanzada
         string Act_Name;
         string Act_Password;
         string Act_Work;
-       
-        
+
+
         //---------------------------LogIn---------------------------------------
         private void button1_Click(object sender, EventArgs e)
         {
             A.SelectTab(1);
         }//cambia a pestaña CreateANewUser
         private void button2_Click(object sender, EventArgs e)
-        {      
+        {
             Act_Name = LogIn_User_txt.Text;
             try
             {
@@ -45,7 +44,7 @@ namespace Proyecto1_PrograAvanzada
             {
                 if (Act_Work == "Parlamentario")
                 {
-                     TempPar = this.SearchParlamentario();
+                    TempPar = this.SearchParlamentario();
                 }
                 else
                 {
@@ -66,27 +65,41 @@ namespace Proyecto1_PrograAvanzada
         private void CreateANewUser_Create_buttom_Click(object sender, EventArgs e)
         {
 
-            if (CreateANewUser_password_txt.Text == CreateANewUser_ConfirmPassword_txt.Text)
+            if (CreateANewUser_password_txt.Text == CreateANewUser_ConfirmPassword_txt.Text && CreateANewUser_password_txt.Text != "")
             {
                 Act_Work = CreateANewUser_Work_Combobox.Text;
                 if (Act_Work == "Parlamentario")
                 {
-                    TempPar = new Parlamentario(CreateANewUser_Name_txt.Text, int.Parse(CreateANewUser_Age_txt.Text), CreateANewUser_Sex_Combobox.Text, CreateANewUser_password_txt.Text);
-                    Goathemala.addParlamentario(TempPar);
-                    ClearCreateANewUser();
-                    A.SelectTab(2);
-                }
-                else
-                {
-                    TempAse = new Asesor(CreateANewUser_Name_txt.Text, int.Parse(CreateANewUser_Age_txt.Text), CreateANewUser_Sex_Combobox.Text, CreateANewUser_password_txt.Text);
-                    if (AsociarAParlamentario(CreateANEwUser_AsociatedP_txt.Text, TempAse) == 0)
+                    try
                     {
+                        TempPar = new Parlamentario(CreateANewUser_Name_txt.Text, int.Parse(CreateANewUser_Age_txt.Text), CreateANewUser_Sex_Combobox.Text, CreateANewUser_password_txt.Text);
+                        Goathemala.addParlamentario(TempPar);
                         ClearCreateANewUser();
                         A.SelectTab(2);
                     }
-                    else
+                    catch
                     {
-                        MessageBox.Show("El asesor que usted nos indico no existe");
+                        MessageBox.Show("Ingrese datos validos");
+                    }
+                }
+                else
+                {
+                    try
+                    {
+                        TempAse = new Asesor(CreateANewUser_Name_txt.Text, int.Parse(CreateANewUser_Age_txt.Text), CreateANewUser_Sex_Combobox.Text, CreateANewUser_password_txt.Text);
+                        if (AsociarAParlamentario(CreateANEwUser_AsociatedP_txt.Text, TempAse) == 0)
+                        {
+                            ClearCreateANewUser();
+                            A.SelectTab(2);
+                        }
+                        else
+                        {
+                            MessageBox.Show("El asesor que usted nos indico no existe");
+                        }
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Ingrese datos validos");
                     }
                 }
             }
@@ -132,12 +145,10 @@ namespace Proyecto1_PrograAvanzada
             A.SelectTab(0);
             if (Act_Work == "Parlamentario")
             {
-                SavedataParlamentario();
                 TempPar = null;
             }
             else
             {
-                SaveDataAsesor();
                 TempAse = null;
             }
             Act_Name = "";
@@ -208,6 +219,7 @@ namespace Proyecto1_PrograAvanzada
         {
             TempPar.listadoDeAsesores(0).Remove();
             GroupUser_AS1_txt.Text = TempPar.listadoDeAsesores(0).ReturnName();
+            ;
         }//Elimia Asesor
         private void GroupUser_X2_Buttom_Click(object sender, EventArgs e)
         {
@@ -244,46 +256,117 @@ namespace Proyecto1_PrograAvanzada
             TempPar.listadoDeAsesores(7).Remove();
             GroupUser_AS8_txt.Text = TempPar.listadoDeAsesores(7).ReturnName();
         }//Elimia Asesor
-        //---------------------------GroupUser---------------------------------------
+         //---------------------------GroupUser---------------------------------------
 
 
         //---------------------------Laws---------------------------------------
-        //---------------------------Laws---------------------------------------
+        private void Law_SeeLaws_Buttom_Click(object sender, EventArgs e)
+        {
+            SeeLaws_Laws_Lbx.Items.Clear();
+            A.SelectTab(6);
+            for (int i = 0; i < Goathemala.GoathemalaLaws.Length; i++)
+            {
+                SeeLaws_Laws_Lbx.Items.Add("Ley # " + (i + 1));
+                SeeLaws_Laws_Lbx.Items.Add(Goathemala.returnLaws(i).returnName());
+                SeeLaws_Laws_Lbx.Items.Add(Goathemala.returnLaws(i).returnDescription());
+                SeeLaws_Laws_Lbx.Items.Add("");
+            }//Se imprimen todas las leyes
+        }//See laws buttom
+        private void Law_CreateLaw_Buttom_Click(object sender, EventArgs e)
+        {
+            A.SelectTab(7);
+            CreateLaws_Name_txt.Text = "";
+            CreateLaws_Description_txt.Text = "";
+        }
+        private void Law_DeleteLaw_Buttom_Click(object sender, EventArgs e)
+        {
+            A.SelectTab(8);
+            for (int i = 0; i < Goathemala.GoathemalaLaws.Length; i++)
+            {
+                DeleteLaws_SelectLaw_Combobox.Items.Add(Goathemala.GoathemalaLaws[i].returnName());
+            }
+        }
+        private void Law_RentLaw_Buttom_Click(object sender, EventArgs e)
+        {
+            A.SelectTab(9);
+        }
+        private void Law_Back_Buttom_Click(object sender, EventArgs e)
+        {
+            A.SelectTab(2);
+        }//RegresaAlMain
+         //---------------------------Laws---------------------------------------
 
 
         //---------------------------SeeLaws---------------------------------------
+        private void SeeLaws_Back_Buttom_Click(object sender, EventArgs e)
+        {
+            A.SelectTab(5);
+        }
         //---------------------------SeeLaws---------------------------------------
 
 
         //---------------------------CreateLaws---------------------------------------
-        //---------------------------CreateLaws---------------------------------------
+        private void CreateLaws_Create_Buttom_Click(object sender, EventArgs e)
+        {
+            if (CreateLaws_Name_txt.Text != "" && CreateLaws_Description_txt.Text != "")
+            {
+                Ley newLey = new Ley(CreateLaws_Name_txt.Text, CreateLaws_Description_txt.Text);
+                Goathemala.addLaw(newLey);
+                newLey = null;
+                CreateLaws_Name_txt.Text = "";
+                CreateLaws_Description_txt.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Ingrese un nombre o una descripcion");
+            }
+        }//Crea una nueva ley
+        private void CreateLaws_Back_Buttom_Click(object sender, EventArgs e)
+        {
+            A.SelectTab(5);
+        }//Regresa al menu de leyes
+         //---------------------------CreateLaws---------------------------------------
 
 
         //---------------------------DeleteLaws---------------------------------------
+        private void DeleteLaws_Back_Buttom_Click(object sender, EventArgs e)
+        {
+            A.SelectTab(5);
+        }//Regresa al menu de leyes
+        private void DeleteLaws_Delete_Buttom_Click(object sender, EventArgs e)
+        {
+
+        }
         //---------------------------DeleteLaws---------------------------------------
 
 
         //---------------------------Rent/Return_Laws---------------------------------------
+
         //---------------------------Rent/Return_Laws---------------------------------------
 
 
         //---------------------------Regulations---------------------------------------
+
         //---------------------------Regulations---------------------------------------
 
 
         //---------------------------SeeRegulations---------------------------------------
+
         //---------------------------SeeRegulations---------------------------------------
 
 
         //---------------------------CreateRegulations---------------------------------------
+
         //---------------------------CreateRegulations---------------------------------------
 
 
         //---------------------------DeleteRegulations---------------------------------------
+
         //---------------------------DeleteRegulations---------------------------------------
 
 
         //---------------------------Rent/Return_Regulations---------------------------------------
+
         //---------------------------Rent/Return_Regulations---------------------------------------
 
 
@@ -307,14 +390,6 @@ namespace Proyecto1_PrograAvanzada
         {
             return Goathemala.AsociarAParlamentario(ParName, AS);
         }//Asocia un asesor a un parlamentario
-        void SavedataParlamentario()
-        {
-            Goathemala.SParlamentario(TempPar.ReturnName()).SaveData(TempPar.ReturnAge(), TempPar.ReturnSex(), TempPar.ReturnPassword());
-        }//Guarda los datos del parlamentario en caso de que existiecen cambios duarante la secion 
-        void SaveDataAsesor()
-        {
-            Goathemala.SAsesor(TempAse.ReturnName()).SaveData(TempAse.ReturnAge(), TempAse.ReturnSex(), TempAse.ReturnPassword());
-        }//Guarda los datos del asesor en caso de que existiecen cambios duarante la secion 
         public void ClearCreateANewUser()
         {
             CreateANewUser_Name_txt.Text = "";

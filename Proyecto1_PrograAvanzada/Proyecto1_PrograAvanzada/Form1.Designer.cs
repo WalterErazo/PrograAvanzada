@@ -102,27 +102,28 @@
             this.GroupUser_AS5_txt = new System.Windows.Forms.TextBox();
             this.GroupUser_Par_Txt = new System.Windows.Forms.TextBox();
             this.Law = new System.Windows.Forms.TabPage();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
+            this.Law_Back_Buttom = new System.Windows.Forms.Button();
+            this.Law_CreateLaw_Buttom = new System.Windows.Forms.Button();
+            this.Law_DeleteLaw_Buttom = new System.Windows.Forms.Button();
+            this.Law_RentLaw_Buttom = new System.Windows.Forms.Button();
             this.label26 = new System.Windows.Forms.Label();
-            this.button12 = new System.Windows.Forms.Button();
+            this.Law_SeeLaws_Buttom = new System.Windows.Forms.Button();
             this.SeeLaws = new System.Windows.Forms.TabPage();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.SeeLaws_Laws_Lbx = new System.Windows.Forms.ListBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.button17 = new System.Windows.Forms.Button();
+            this.SeeLaws_Back_Buttom = new System.Windows.Forms.Button();
             this.CreateLaws = new System.Windows.Forms.TabPage();
-            this.button16 = new System.Windows.Forms.Button();
+            this.CreateLaws_Back_Buttom = new System.Windows.Forms.Button();
             this.CreateLaws_Create_Buttom = new System.Windows.Forms.Button();
             this.CreateLaws_Description_txt = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.CreateLaws_Name_txt = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.DeleteLaws = new System.Windows.Forms.TabPage();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
+            this.DeleteLaws_Delete_Buttom = new System.Windows.Forms.Button();
+            this.DeleteLaws_Back_Buttom = new System.Windows.Forms.Button();
             this.label30 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.DeleteLaws_SelectLaw_Combobox = new System.Windows.Forms.ComboBox();
             this.RentLaws = new System.Windows.Forms.TabPage();
             this.Regulations = new System.Windows.Forms.TabPage();
             this.button23 = new System.Windows.Forms.Button();
@@ -131,7 +132,6 @@
             this.button20 = new System.Windows.Forms.Button();
             this.label31 = new System.Windows.Forms.Label();
             this.SeeRegulations = new System.Windows.Forms.TabPage();
-            this.textBox12 = new System.Windows.Forms.TextBox();
             this.button24 = new System.Windows.Forms.Button();
             this.label32 = new System.Windows.Forms.Label();
             this.CreateRegulations = new System.Windows.Forms.TabPage();
@@ -139,6 +139,14 @@
             this.label33 = new System.Windows.Forms.Label();
             this.DeleteRegulations = new System.Windows.Forms.TabPage();
             this.RentRegulations = new System.Windows.Forms.TabPage();
+            this.RentLaws_ChooseLaw_Combobox = new System.Windows.Forms.ComboBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.RentLaws_ReturnLaw_Combobox = new System.Windows.Forms.ComboBox();
+            this.RentLaws_Rent_Buttom = new System.Windows.Forms.Button();
+            this.RentLaws_Return_Buttom = new System.Windows.Forms.Button();
+            this.RentLaws_Back_Buttom = new System.Windows.Forms.Button();
+            this.SeeRegulation_Regulations_Listbox = new System.Windows.Forms.ListBox();
             this.A.SuspendLayout();
             this.LogIn.SuspendLayout();
             this.CreateANewUser.SuspendLayout();
@@ -149,6 +157,7 @@
             this.SeeLaws.SuspendLayout();
             this.CreateLaws.SuspendLayout();
             this.DeleteLaws.SuspendLayout();
+            this.RentLaws.SuspendLayout();
             this.Regulations.SuspendLayout();
             this.SeeRegulations.SuspendLayout();
             this.CreateRegulations.SuspendLayout();
@@ -171,10 +180,10 @@
             this.A.Controls.Add(this.CreateRegulations);
             this.A.Controls.Add(this.DeleteRegulations);
             this.A.Controls.Add(this.RentRegulations);
-            this.A.Location = new System.Drawing.Point(-3, 3);
+            this.A.Location = new System.Drawing.Point(-3, 2);
             this.A.Name = "A";
             this.A.SelectedIndex = 0;
-            this.A.Size = new System.Drawing.Size(359, 342);
+            this.A.Size = new System.Drawing.Size(359, 343);
             this.A.TabIndex = 0;
             // 
             // LogIn
@@ -289,7 +298,7 @@
             this.CreateANewUser.Location = new System.Drawing.Point(4, 22);
             this.CreateANewUser.Name = "CreateANewUser";
             this.CreateANewUser.Padding = new System.Windows.Forms.Padding(3);
-            this.CreateANewUser.Size = new System.Drawing.Size(351, 316);
+            this.CreateANewUser.Size = new System.Drawing.Size(351, 317);
             this.CreateANewUser.TabIndex = 1;
             this.CreateANewUser.Text = "CreateANewUser";
             this.CreateANewUser.UseVisualStyleBackColor = true;
@@ -441,7 +450,7 @@
             this.Principal.Controls.Add(this.Principal_Laws_Buttom);
             this.Principal.Location = new System.Drawing.Point(4, 22);
             this.Principal.Name = "Principal";
-            this.Principal.Size = new System.Drawing.Size(351, 316);
+            this.Principal.Size = new System.Drawing.Size(351, 317);
             this.Principal.TabIndex = 2;
             this.Principal.Text = "Principal";
             this.Principal.UseVisualStyleBackColor = true;
@@ -512,7 +521,7 @@
             this.UserDetails.Controls.Add(this.label13);
             this.UserDetails.Location = new System.Drawing.Point(4, 22);
             this.UserDetails.Name = "UserDetails";
-            this.UserDetails.Size = new System.Drawing.Size(351, 316);
+            this.UserDetails.Size = new System.Drawing.Size(351, 317);
             this.UserDetails.TabIndex = 5;
             this.UserDetails.Text = "UserDetails";
             this.UserDetails.UseVisualStyleBackColor = true;
@@ -658,7 +667,7 @@
             this.GroupUser.Controls.Add(this.GroupUser_Par_Txt);
             this.GroupUser.Location = new System.Drawing.Point(4, 22);
             this.GroupUser.Name = "GroupUser";
-            this.GroupUser.Size = new System.Drawing.Size(351, 316);
+            this.GroupUser.Size = new System.Drawing.Size(351, 317);
             this.GroupUser.TabIndex = 6;
             this.GroupUser.Text = "GroupUser";
             this.GroupUser.UseVisualStyleBackColor = true;
@@ -908,44 +917,58 @@
             // 
             // Law
             // 
-            this.Law.Controls.Add(this.button15);
-            this.Law.Controls.Add(this.button14);
-            this.Law.Controls.Add(this.button13);
+            this.Law.Controls.Add(this.Law_Back_Buttom);
+            this.Law.Controls.Add(this.Law_CreateLaw_Buttom);
+            this.Law.Controls.Add(this.Law_DeleteLaw_Buttom);
+            this.Law.Controls.Add(this.Law_RentLaw_Buttom);
             this.Law.Controls.Add(this.label26);
-            this.Law.Controls.Add(this.button12);
+            this.Law.Controls.Add(this.Law_SeeLaws_Buttom);
             this.Law.Location = new System.Drawing.Point(4, 22);
             this.Law.Name = "Law";
-            this.Law.Size = new System.Drawing.Size(351, 316);
+            this.Law.Size = new System.Drawing.Size(351, 317);
             this.Law.TabIndex = 3;
             this.Law.Text = "Law";
             this.Law.UseVisualStyleBackColor = true;
             // 
-            // button15
+            // Law_Back_Buttom
             // 
-            this.button15.Location = new System.Drawing.Point(29, 98);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(134, 30);
-            this.button15.TabIndex = 4;
-            this.button15.Text = "Crear ley";
-            this.button15.UseVisualStyleBackColor = true;
+            this.Law_Back_Buttom.Location = new System.Drawing.Point(206, 236);
+            this.Law_Back_Buttom.Name = "Law_Back_Buttom";
+            this.Law_Back_Buttom.Size = new System.Drawing.Size(124, 39);
+            this.Law_Back_Buttom.TabIndex = 5;
+            this.Law_Back_Buttom.Text = "Regresar";
+            this.Law_Back_Buttom.UseVisualStyleBackColor = true;
+            this.Law_Back_Buttom.Click += new System.EventHandler(this.Law_Back_Buttom_Click);
             // 
-            // button14
+            // Law_CreateLaw_Buttom
             // 
-            this.button14.Location = new System.Drawing.Point(29, 143);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(134, 30);
-            this.button14.TabIndex = 3;
-            this.button14.Text = "Borrar Ley";
-            this.button14.UseVisualStyleBackColor = true;
+            this.Law_CreateLaw_Buttom.Location = new System.Drawing.Point(29, 98);
+            this.Law_CreateLaw_Buttom.Name = "Law_CreateLaw_Buttom";
+            this.Law_CreateLaw_Buttom.Size = new System.Drawing.Size(134, 30);
+            this.Law_CreateLaw_Buttom.TabIndex = 4;
+            this.Law_CreateLaw_Buttom.Text = "Crear ley";
+            this.Law_CreateLaw_Buttom.UseVisualStyleBackColor = true;
+            this.Law_CreateLaw_Buttom.Click += new System.EventHandler(this.Law_CreateLaw_Buttom_Click);
             // 
-            // button13
+            // Law_DeleteLaw_Buttom
             // 
-            this.button13.Location = new System.Drawing.Point(29, 190);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(134, 30);
-            this.button13.TabIndex = 2;
-            this.button13.Text = "Prestar/Devolver ley";
-            this.button13.UseVisualStyleBackColor = true;
+            this.Law_DeleteLaw_Buttom.Location = new System.Drawing.Point(29, 143);
+            this.Law_DeleteLaw_Buttom.Name = "Law_DeleteLaw_Buttom";
+            this.Law_DeleteLaw_Buttom.Size = new System.Drawing.Size(134, 30);
+            this.Law_DeleteLaw_Buttom.TabIndex = 3;
+            this.Law_DeleteLaw_Buttom.Text = "Borrar Ley";
+            this.Law_DeleteLaw_Buttom.UseVisualStyleBackColor = true;
+            this.Law_DeleteLaw_Buttom.Click += new System.EventHandler(this.Law_DeleteLaw_Buttom_Click);
+            // 
+            // Law_RentLaw_Buttom
+            // 
+            this.Law_RentLaw_Buttom.Location = new System.Drawing.Point(29, 190);
+            this.Law_RentLaw_Buttom.Name = "Law_RentLaw_Buttom";
+            this.Law_RentLaw_Buttom.Size = new System.Drawing.Size(134, 30);
+            this.Law_RentLaw_Buttom.TabIndex = 2;
+            this.Law_RentLaw_Buttom.Text = "Prestar/Devolver ley";
+            this.Law_RentLaw_Buttom.UseVisualStyleBackColor = true;
+            this.Law_RentLaw_Buttom.Click += new System.EventHandler(this.Law_RentLaw_Buttom_Click);
             // 
             // label26
             // 
@@ -957,34 +980,35 @@
             this.label26.TabIndex = 1;
             this.label26.Text = "Leyes";
             // 
-            // button12
+            // Law_SeeLaws_Buttom
             // 
-            this.button12.Location = new System.Drawing.Point(29, 53);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(134, 30);
-            this.button12.TabIndex = 0;
-            this.button12.Text = "Ver leyes";
-            this.button12.UseVisualStyleBackColor = true;
+            this.Law_SeeLaws_Buttom.Location = new System.Drawing.Point(29, 53);
+            this.Law_SeeLaws_Buttom.Name = "Law_SeeLaws_Buttom";
+            this.Law_SeeLaws_Buttom.Size = new System.Drawing.Size(134, 30);
+            this.Law_SeeLaws_Buttom.TabIndex = 0;
+            this.Law_SeeLaws_Buttom.Text = "Ver leyes";
+            this.Law_SeeLaws_Buttom.UseVisualStyleBackColor = true;
+            this.Law_SeeLaws_Buttom.Click += new System.EventHandler(this.Law_SeeLaws_Buttom_Click);
             // 
             // SeeLaws
             // 
-            this.SeeLaws.Controls.Add(this.textBox11);
+            this.SeeLaws.Controls.Add(this.SeeLaws_Laws_Lbx);
             this.SeeLaws.Controls.Add(this.label29);
-            this.SeeLaws.Controls.Add(this.button17);
+            this.SeeLaws.Controls.Add(this.SeeLaws_Back_Buttom);
             this.SeeLaws.Location = new System.Drawing.Point(4, 22);
             this.SeeLaws.Name = "SeeLaws";
-            this.SeeLaws.Size = new System.Drawing.Size(351, 316);
+            this.SeeLaws.Size = new System.Drawing.Size(351, 317);
             this.SeeLaws.TabIndex = 7;
             this.SeeLaws.Text = "SeeLaws";
             this.SeeLaws.UseVisualStyleBackColor = true;
             // 
-            // textBox11
+            // SeeLaws_Laws_Lbx
             // 
-            this.textBox11.Location = new System.Drawing.Point(11, 42);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(319, 234);
-            this.textBox11.TabIndex = 2;
+            this.SeeLaws_Laws_Lbx.FormattingEnabled = true;
+            this.SeeLaws_Laws_Lbx.Location = new System.Drawing.Point(11, 50);
+            this.SeeLaws_Laws_Lbx.Name = "SeeLaws_Laws_Lbx";
+            this.SeeLaws_Laws_Lbx.Size = new System.Drawing.Size(332, 225);
+            this.SeeLaws_Laws_Lbx.TabIndex = 3;
             // 
             // label29
             // 
@@ -995,38 +1019,40 @@
             this.label29.TabIndex = 1;
             this.label29.Text = "Leyes Existentes";
             // 
-            // button17
+            // SeeLaws_Back_Buttom
             // 
-            this.button17.Location = new System.Drawing.Point(255, 13);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(75, 23);
-            this.button17.TabIndex = 0;
-            this.button17.Text = "Regresar";
-            this.button17.UseVisualStyleBackColor = true;
+            this.SeeLaws_Back_Buttom.Location = new System.Drawing.Point(255, 13);
+            this.SeeLaws_Back_Buttom.Name = "SeeLaws_Back_Buttom";
+            this.SeeLaws_Back_Buttom.Size = new System.Drawing.Size(75, 23);
+            this.SeeLaws_Back_Buttom.TabIndex = 0;
+            this.SeeLaws_Back_Buttom.Text = "Regresar";
+            this.SeeLaws_Back_Buttom.UseVisualStyleBackColor = true;
+            this.SeeLaws_Back_Buttom.Click += new System.EventHandler(this.SeeLaws_Back_Buttom_Click);
             // 
             // CreateLaws
             // 
-            this.CreateLaws.Controls.Add(this.button16);
+            this.CreateLaws.Controls.Add(this.CreateLaws_Back_Buttom);
             this.CreateLaws.Controls.Add(this.CreateLaws_Create_Buttom);
             this.CreateLaws.Controls.Add(this.CreateLaws_Description_txt);
             this.CreateLaws.Controls.Add(this.label28);
-            this.CreateLaws.Controls.Add(this.textBox10);
+            this.CreateLaws.Controls.Add(this.CreateLaws_Name_txt);
             this.CreateLaws.Controls.Add(this.label27);
             this.CreateLaws.Location = new System.Drawing.Point(4, 22);
             this.CreateLaws.Name = "CreateLaws";
-            this.CreateLaws.Size = new System.Drawing.Size(351, 316);
+            this.CreateLaws.Size = new System.Drawing.Size(351, 317);
             this.CreateLaws.TabIndex = 8;
             this.CreateLaws.Text = "CreateLaws";
             this.CreateLaws.UseVisualStyleBackColor = true;
             // 
-            // button16
+            // CreateLaws_Back_Buttom
             // 
-            this.button16.Location = new System.Drawing.Point(242, 62);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(75, 23);
-            this.button16.TabIndex = 5;
-            this.button16.Text = "Regresar";
-            this.button16.UseVisualStyleBackColor = true;
+            this.CreateLaws_Back_Buttom.Location = new System.Drawing.Point(242, 62);
+            this.CreateLaws_Back_Buttom.Name = "CreateLaws_Back_Buttom";
+            this.CreateLaws_Back_Buttom.Size = new System.Drawing.Size(75, 23);
+            this.CreateLaws_Back_Buttom.TabIndex = 5;
+            this.CreateLaws_Back_Buttom.Text = "Regresar";
+            this.CreateLaws_Back_Buttom.UseVisualStyleBackColor = true;
+            this.CreateLaws_Back_Buttom.Click += new System.EventHandler(this.CreateLaws_Back_Buttom_Click);
             // 
             // CreateLaws_Create_Buttom
             // 
@@ -1036,6 +1062,7 @@
             this.CreateLaws_Create_Buttom.TabIndex = 4;
             this.CreateLaws_Create_Buttom.Text = "Crear";
             this.CreateLaws_Create_Buttom.UseVisualStyleBackColor = true;
+            this.CreateLaws_Create_Buttom.Click += new System.EventHandler(this.CreateLaws_Create_Buttom_Click);
             // 
             // CreateLaws_Description_txt
             // 
@@ -1054,12 +1081,12 @@
             this.label28.TabIndex = 2;
             this.label28.Text = "Descripcion";
             // 
-            // textBox10
+            // CreateLaws_Name_txt
             // 
-            this.textBox10.Location = new System.Drawing.Point(91, 28);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(122, 20);
-            this.textBox10.TabIndex = 1;
+            this.CreateLaws_Name_txt.Location = new System.Drawing.Point(91, 28);
+            this.CreateLaws_Name_txt.Name = "CreateLaws_Name_txt";
+            this.CreateLaws_Name_txt.Size = new System.Drawing.Size(122, 20);
+            this.CreateLaws_Name_txt.TabIndex = 1;
             // 
             // label27
             // 
@@ -1072,34 +1099,36 @@
             // 
             // DeleteLaws
             // 
-            this.DeleteLaws.Controls.Add(this.button19);
-            this.DeleteLaws.Controls.Add(this.button18);
+            this.DeleteLaws.Controls.Add(this.DeleteLaws_Delete_Buttom);
+            this.DeleteLaws.Controls.Add(this.DeleteLaws_Back_Buttom);
             this.DeleteLaws.Controls.Add(this.label30);
-            this.DeleteLaws.Controls.Add(this.comboBox1);
+            this.DeleteLaws.Controls.Add(this.DeleteLaws_SelectLaw_Combobox);
             this.DeleteLaws.Location = new System.Drawing.Point(4, 22);
             this.DeleteLaws.Name = "DeleteLaws";
-            this.DeleteLaws.Size = new System.Drawing.Size(351, 316);
+            this.DeleteLaws.Size = new System.Drawing.Size(351, 317);
             this.DeleteLaws.TabIndex = 9;
             this.DeleteLaws.Text = "DeleteLaws";
             this.DeleteLaws.UseVisualStyleBackColor = true;
             // 
-            // button19
+            // DeleteLaws_Delete_Buttom
             // 
-            this.button19.Location = new System.Drawing.Point(193, 146);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(98, 40);
-            this.button19.TabIndex = 3;
-            this.button19.Text = "Eliminar";
-            this.button19.UseVisualStyleBackColor = true;
+            this.DeleteLaws_Delete_Buttom.Location = new System.Drawing.Point(193, 146);
+            this.DeleteLaws_Delete_Buttom.Name = "DeleteLaws_Delete_Buttom";
+            this.DeleteLaws_Delete_Buttom.Size = new System.Drawing.Size(98, 40);
+            this.DeleteLaws_Delete_Buttom.TabIndex = 3;
+            this.DeleteLaws_Delete_Buttom.Text = "Eliminar";
+            this.DeleteLaws_Delete_Buttom.UseVisualStyleBackColor = true;
+            this.DeleteLaws_Delete_Buttom.Click += new System.EventHandler(this.DeleteLaws_Delete_Buttom_Click);
             // 
-            // button18
+            // DeleteLaws_Back_Buttom
             // 
-            this.button18.Location = new System.Drawing.Point(59, 146);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(98, 40);
-            this.button18.TabIndex = 2;
-            this.button18.Text = "Regresar";
-            this.button18.UseVisualStyleBackColor = true;
+            this.DeleteLaws_Back_Buttom.Location = new System.Drawing.Point(59, 146);
+            this.DeleteLaws_Back_Buttom.Name = "DeleteLaws_Back_Buttom";
+            this.DeleteLaws_Back_Buttom.Size = new System.Drawing.Size(98, 40);
+            this.DeleteLaws_Back_Buttom.TabIndex = 2;
+            this.DeleteLaws_Back_Buttom.Text = "Regresar";
+            this.DeleteLaws_Back_Buttom.UseVisualStyleBackColor = true;
+            this.DeleteLaws_Back_Buttom.Click += new System.EventHandler(this.DeleteLaws_Back_Buttom_Click);
             // 
             // label30
             // 
@@ -1111,19 +1140,26 @@
             this.label30.TabIndex = 1;
             this.label30.Text = "Seleccione la ley que desea eliminar";
             // 
-            // comboBox1
+            // DeleteLaws_SelectLaw_Combobox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(23, 68);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(295, 21);
-            this.comboBox1.TabIndex = 0;
+            this.DeleteLaws_SelectLaw_Combobox.FormattingEnabled = true;
+            this.DeleteLaws_SelectLaw_Combobox.Location = new System.Drawing.Point(23, 68);
+            this.DeleteLaws_SelectLaw_Combobox.Name = "DeleteLaws_SelectLaw_Combobox";
+            this.DeleteLaws_SelectLaw_Combobox.Size = new System.Drawing.Size(295, 21);
+            this.DeleteLaws_SelectLaw_Combobox.TabIndex = 0;
             // 
             // RentLaws
             // 
+            this.RentLaws.Controls.Add(this.RentLaws_Back_Buttom);
+            this.RentLaws.Controls.Add(this.RentLaws_Return_Buttom);
+            this.RentLaws.Controls.Add(this.RentLaws_Rent_Buttom);
+            this.RentLaws.Controls.Add(this.RentLaws_ReturnLaw_Combobox);
+            this.RentLaws.Controls.Add(this.label37);
+            this.RentLaws.Controls.Add(this.label36);
+            this.RentLaws.Controls.Add(this.RentLaws_ChooseLaw_Combobox);
             this.RentLaws.Location = new System.Drawing.Point(4, 22);
             this.RentLaws.Name = "RentLaws";
-            this.RentLaws.Size = new System.Drawing.Size(351, 316);
+            this.RentLaws.Size = new System.Drawing.Size(351, 317);
             this.RentLaws.TabIndex = 10;
             this.RentLaws.Text = "RentLaws";
             this.RentLaws.UseVisualStyleBackColor = true;
@@ -1190,7 +1226,7 @@
             // 
             // SeeRegulations
             // 
-            this.SeeRegulations.Controls.Add(this.textBox12);
+            this.SeeRegulations.Controls.Add(this.SeeRegulation_Regulations_Listbox);
             this.SeeRegulations.Controls.Add(this.button24);
             this.SeeRegulations.Controls.Add(this.label32);
             this.SeeRegulations.Location = new System.Drawing.Point(4, 22);
@@ -1199,14 +1235,6 @@
             this.SeeRegulations.TabIndex = 12;
             this.SeeRegulations.Text = "SeeRegulations";
             this.SeeRegulations.UseVisualStyleBackColor = true;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(14, 45);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(316, 231);
-            this.textBox12.TabIndex = 2;
             // 
             // button24
             // 
@@ -1273,6 +1301,77 @@
             this.RentRegulations.Text = "RentRegulations";
             this.RentRegulations.UseVisualStyleBackColor = true;
             // 
+            // RentLaws_ChooseLaw_Combobox
+            // 
+            this.RentLaws_ChooseLaw_Combobox.FormattingEnabled = true;
+            this.RentLaws_ChooseLaw_Combobox.Location = new System.Drawing.Point(68, 57);
+            this.RentLaws_ChooseLaw_Combobox.Name = "RentLaws_ChooseLaw_Combobox";
+            this.RentLaws_ChooseLaw_Combobox.Size = new System.Drawing.Size(241, 21);
+            this.RentLaws_ChooseLaw_Combobox.TabIndex = 0;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(11, 29);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(259, 16);
+            this.label36.TabIndex = 1;
+            this.label36.Text = "Seleccione la ley que desea prestar";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(11, 142);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(259, 16);
+            this.label37.TabIndex = 2;
+            this.label37.Text = "Seleccione la ley que desea prestar";
+            // 
+            // RentLaws_ReturnLaw_Combobox
+            // 
+            this.RentLaws_ReturnLaw_Combobox.FormattingEnabled = true;
+            this.RentLaws_ReturnLaw_Combobox.Location = new System.Drawing.Point(68, 170);
+            this.RentLaws_ReturnLaw_Combobox.Name = "RentLaws_ReturnLaw_Combobox";
+            this.RentLaws_ReturnLaw_Combobox.Size = new System.Drawing.Size(241, 21);
+            this.RentLaws_ReturnLaw_Combobox.TabIndex = 3;
+            // 
+            // RentLaws_Rent_Buttom
+            // 
+            this.RentLaws_Rent_Buttom.Location = new System.Drawing.Point(238, 84);
+            this.RentLaws_Rent_Buttom.Name = "RentLaws_Rent_Buttom";
+            this.RentLaws_Rent_Buttom.Size = new System.Drawing.Size(105, 35);
+            this.RentLaws_Rent_Buttom.TabIndex = 4;
+            this.RentLaws_Rent_Buttom.Text = "Rentar";
+            this.RentLaws_Rent_Buttom.UseVisualStyleBackColor = true;
+            // 
+            // RentLaws_Return_Buttom
+            // 
+            this.RentLaws_Return_Buttom.Location = new System.Drawing.Point(243, 197);
+            this.RentLaws_Return_Buttom.Name = "RentLaws_Return_Buttom";
+            this.RentLaws_Return_Buttom.Size = new System.Drawing.Size(105, 35);
+            this.RentLaws_Return_Buttom.TabIndex = 5;
+            this.RentLaws_Return_Buttom.Text = "Devolver";
+            this.RentLaws_Return_Buttom.UseVisualStyleBackColor = true;
+            // 
+            // RentLaws_Back_Buttom
+            // 
+            this.RentLaws_Back_Buttom.Location = new System.Drawing.Point(14, 240);
+            this.RentLaws_Back_Buttom.Name = "RentLaws_Back_Buttom";
+            this.RentLaws_Back_Buttom.Size = new System.Drawing.Size(105, 35);
+            this.RentLaws_Back_Buttom.TabIndex = 6;
+            this.RentLaws_Back_Buttom.Text = "Regresar";
+            this.RentLaws_Back_Buttom.UseVisualStyleBackColor = true;
+            // 
+            // SeeRegulation_Regulations_Listbox
+            // 
+            this.SeeRegulation_Regulations_Listbox.FormattingEnabled = true;
+            this.SeeRegulation_Regulations_Listbox.Location = new System.Drawing.Point(12, 56);
+            this.SeeRegulation_Regulations_Listbox.Name = "SeeRegulation_Regulations_Listbox";
+            this.SeeRegulation_Regulations_Listbox.Size = new System.Drawing.Size(326, 212);
+            this.SeeRegulation_Regulations_Listbox.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1300,6 +1399,8 @@
             this.CreateLaws.PerformLayout();
             this.DeleteLaws.ResumeLayout(false);
             this.DeleteLaws.PerformLayout();
+            this.RentLaws.ResumeLayout(false);
+            this.RentLaws.PerformLayout();
             this.Regulations.ResumeLayout(false);
             this.Regulations.PerformLayout();
             this.SeeRegulations.ResumeLayout(false);
@@ -1392,30 +1493,28 @@
         private System.Windows.Forms.TextBox GroupUser_AS5_txt;
         private System.Windows.Forms.TextBox GroupUser_Par_Txt;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button Law_CreateLaw_Buttom;
+        private System.Windows.Forms.Button Law_DeleteLaw_Buttom;
+        private System.Windows.Forms.Button Law_RentLaw_Buttom;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button Law_SeeLaws_Buttom;
         private System.Windows.Forms.TextBox CreateLaws_Description_txt;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox CreateLaws_Name_txt;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button CreateLaws_Back_Buttom;
         private System.Windows.Forms.Button CreateLaws_Create_Buttom;
-        private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button SeeLaws_Back_Buttom;
+        private System.Windows.Forms.Button DeleteLaws_Delete_Buttom;
+        private System.Windows.Forms.Button DeleteLaws_Back_Buttom;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox DeleteLaws_SelectLaw_Combobox;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label34;
@@ -1423,6 +1522,16 @@
         private System.Windows.Forms.Button Principal_Exit_Buttom;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.TextBox CreateANEwUser_AsociatedP_txt;
+        private System.Windows.Forms.Button Law_Back_Buttom;
+        private System.Windows.Forms.ListBox SeeLaws_Laws_Lbx;
+        private System.Windows.Forms.Button RentLaws_Back_Buttom;
+        private System.Windows.Forms.Button RentLaws_Return_Buttom;
+        private System.Windows.Forms.Button RentLaws_Rent_Buttom;
+        private System.Windows.Forms.ComboBox RentLaws_ReturnLaw_Combobox;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.ComboBox RentLaws_ChooseLaw_Combobox;
+        private System.Windows.Forms.ListBox SeeRegulation_Regulations_Listbox;
     }
 }
 

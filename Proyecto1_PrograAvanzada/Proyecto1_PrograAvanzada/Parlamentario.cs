@@ -13,10 +13,11 @@ namespace Proyecto1_PrograAvanzada
         private string Sex;
         private string Password;
         public bool CanEdit = true;
-        private Asesor[] Asesores = new Asesor[8];
-        private Ley[] LeyesEnAlquiler = new Ley[50];
+        public Asesor[] Asesores = new Asesor[8];
+        public Ley[] LeyesEnAlquiler = new Ley[0];
+        public Reglamento[] ReglamentosEnAlquiler = new Reglamento[0];
 
-
+        //Users
         public Parlamentario(string _Name, int _Age, string _Sex, string _Password)
         {
             Name = _Name;
@@ -101,11 +102,50 @@ namespace Proyecto1_PrograAvanzada
             }
         }//Crea el espacio para los asesores
 
-        public void SaveData(int _Age, string _Sex, string _Password)
+
+        //Laws
+        public void AlquilarLey(Ley A)
         {
-            Age = _Age;
-            Sex = _Sex;
-            Password = _Password;
-        }//Inservible
+            Array.Resize(ref LeyesEnAlquiler, (LeyesEnAlquiler.Length + 1));
+            LeyesEnAlquiler[LeyesEnAlquiler.Length - 1] = A;
+        }//Agranda el arreglo 1 tamaño y guarda la nueva
+        public void DevolverLey(Ley A)
+        {
+            for (int i = 0; i < LeyesEnAlquiler.Length; i++)
+            {
+                if (A.returnName() == LeyesEnAlquiler[i].returnName())
+                {
+                    LeyesEnAlquiler[i] = null;
+                }
+            }
+            this.ArreglarLeyes();
+        }//Elimina la ley alquilada
+        public void ArreglarLeyes()
+        {
+            int cont = 0;
+            for (int i = 0; i < LeyesEnAlquiler.Length; i++)
+            {
+                if (LeyesEnAlquiler[i] == null)
+                {
+                    for (int j = cont; j < LeyesEnAlquiler.Length; j++)
+                    {
+                        LeyesEnAlquiler[i] = LeyesEnAlquiler[i + 1];
+                    }
+                }
+                else
+                {
+                    cont++;
+                }
+            }
+            Array.Resize(ref LeyesEnAlquiler, (LeyesEnAlquiler.Length - 1));
+        }//Arregla el arreglo xd, para sacar el null y quitar el ultimo porque se repite
+
+
+        //reglamento
+        public void AlquilarReglamento(Reglamento A)
+        {
+            Array.Resize(ref ReglamentosEnAlquiler, (ReglamentosEnAlquiler.Length + 1));
+            ReglamentosEnAlquiler[ReglamentosEnAlquiler.Length - 1] = A;
+        }//Agranda el arreglo 1 tamaño y guarda la nueva 
     }
 }

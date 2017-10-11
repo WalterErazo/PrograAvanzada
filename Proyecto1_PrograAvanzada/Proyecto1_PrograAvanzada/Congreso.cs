@@ -8,14 +8,16 @@ namespace Proyecto1_PrograAvanzada
 {
     class Congreso
     {
-        public Parlamentario[] Congress = new Parlamentario[100];
+        public Parlamentario[] Congress = new Parlamentario[0];
+        public Ley[] GoathemalaLaws = new Ley[0];
 
         private int cont = 0;
 
 
-
+        //Users
         public void addParlamentario(Parlamentario A)
         {
+            Array.Resize(ref Congress, Congress.Length + 1);
             Congress[cont] = A;
             A.InicializarAsesores();
             cont++;
@@ -90,13 +92,6 @@ namespace Proyecto1_PrograAvanzada
             }
             return -1;//Retrona menos 1 si no hay ningun parlamentario llamado asi
         }
-        public void InicializarCongreso()
-        {
-            for (int i = 0; i < 100; i++)
-            {
-                Congress[i] = new Parlamentario("USUARIOVACIO", 0, "", "");
-            }
-        }
         public Parlamentario getParlamentarioConUnAsesor(string AsName)
         {
             for (int i = 0; i < 100; i++)
@@ -108,5 +103,18 @@ namespace Proyecto1_PrograAvanzada
             }
             return Congress[99];
         }
+
+
+
+        //Laws
+        public void addLaw(Ley _NewLey)
+        {
+            Array.Resize(ref GoathemalaLaws, (GoathemalaLaws.Length + 1));
+            GoathemalaLaws[GoathemalaLaws.Length - 1] = _NewLey;
+        }//Añade una nueva ley en el congreso
+        public Ley returnLaws(int i)
+        {
+            return GoathemalaLaws[i];
+        }//Retorna la Ley del arreglo indicada
     }
 }
