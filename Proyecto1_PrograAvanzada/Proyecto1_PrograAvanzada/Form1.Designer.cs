@@ -166,6 +166,11 @@
             this.RentRegulation_ChooseRegulation_comboBox = new System.Windows.Forms.ComboBox();
             this.label40 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
+            this.Principal_Status_button = new System.Windows.Forms.Button();
+            this.Status = new System.Windows.Forms.TabPage();
+            this.Status_Back_Buttom = new System.Windows.Forms.Button();
+            this.Status_List_listBox = new System.Windows.Forms.ListBox();
+            this.label43 = new System.Windows.Forms.Label();
             this.A.SuspendLayout();
             this.LogIn.SuspendLayout();
             this.CreateANewUser.SuspendLayout();
@@ -182,6 +187,7 @@
             this.CreateRegulations.SuspendLayout();
             this.DeleteRegulations.SuspendLayout();
             this.RentRegulations.SuspendLayout();
+            this.Status.SuspendLayout();
             this.SuspendLayout();
             // 
             // A
@@ -201,6 +207,7 @@
             this.A.Controls.Add(this.CreateRegulations);
             this.A.Controls.Add(this.DeleteRegulations);
             this.A.Controls.Add(this.RentRegulations);
+            this.A.Controls.Add(this.Status);
             this.A.Location = new System.Drawing.Point(-3, 0);
             this.A.Name = "A";
             this.A.SelectedIndex = 0;
@@ -220,7 +227,7 @@
             this.LogIn.Location = new System.Drawing.Point(4, 22);
             this.LogIn.Name = "LogIn";
             this.LogIn.Padding = new System.Windows.Forms.Padding(3);
-            this.LogIn.Size = new System.Drawing.Size(351, 319);
+            this.LogIn.Size = new System.Drawing.Size(351, 314);
             this.LogIn.TabIndex = 0;
             this.LogIn.Text = "LogIn";
             this.LogIn.UseVisualStyleBackColor = true;
@@ -319,7 +326,7 @@
             this.CreateANewUser.Location = new System.Drawing.Point(4, 22);
             this.CreateANewUser.Name = "CreateANewUser";
             this.CreateANewUser.Padding = new System.Windows.Forms.Padding(3);
-            this.CreateANewUser.Size = new System.Drawing.Size(351, 319);
+            this.CreateANewUser.Size = new System.Drawing.Size(351, 314);
             this.CreateANewUser.TabIndex = 1;
             this.CreateANewUser.Text = "CreateANewUser";
             this.CreateANewUser.UseVisualStyleBackColor = true;
@@ -467,6 +474,7 @@
             // 
             // Principal
             // 
+            this.Principal.Controls.Add(this.Principal_Status_button);
             this.Principal.Controls.Add(this.Principal_Exit_Buttom);
             this.Principal.Controls.Add(this.label12);
             this.Principal.Controls.Add(this.Principal_Regulations_Buttom);
@@ -474,16 +482,16 @@
             this.Principal.Controls.Add(this.Principal_Laws_Buttom);
             this.Principal.Location = new System.Drawing.Point(4, 22);
             this.Principal.Name = "Principal";
-            this.Principal.Size = new System.Drawing.Size(351, 319);
+            this.Principal.Size = new System.Drawing.Size(351, 314);
             this.Principal.TabIndex = 2;
             this.Principal.Text = "Principal";
             this.Principal.UseVisualStyleBackColor = true;
             // 
             // Principal_Exit_Buttom
             // 
-            this.Principal_Exit_Buttom.Location = new System.Drawing.Point(215, 215);
+            this.Principal_Exit_Buttom.Location = new System.Drawing.Point(208, 223);
             this.Principal_Exit_Buttom.Name = "Principal_Exit_Buttom";
-            this.Principal_Exit_Buttom.Size = new System.Drawing.Size(104, 51);
+            this.Principal_Exit_Buttom.Size = new System.Drawing.Size(111, 35);
             this.Principal_Exit_Buttom.TabIndex = 8;
             this.Principal_Exit_Buttom.Text = "Cerrar";
             this.Principal_Exit_Buttom.UseVisualStyleBackColor = true;
@@ -493,7 +501,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Monotype Corsiva", 27.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(207, 17);
+            this.label12.Location = new System.Drawing.Point(200, 31);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(107, 45);
             this.label12.TabIndex = 7;
@@ -545,7 +553,7 @@
             this.UserDetails.Controls.Add(this.label13);
             this.UserDetails.Location = new System.Drawing.Point(4, 22);
             this.UserDetails.Name = "UserDetails";
-            this.UserDetails.Size = new System.Drawing.Size(351, 319);
+            this.UserDetails.Size = new System.Drawing.Size(351, 314);
             this.UserDetails.TabIndex = 5;
             this.UserDetails.Text = "UserDetails";
             this.UserDetails.UseVisualStyleBackColor = true;
@@ -691,7 +699,7 @@
             this.GroupUser.Controls.Add(this.GroupUser_Par_Txt);
             this.GroupUser.Location = new System.Drawing.Point(4, 22);
             this.GroupUser.Name = "GroupUser";
-            this.GroupUser.Size = new System.Drawing.Size(351, 319);
+            this.GroupUser.Size = new System.Drawing.Size(351, 314);
             this.GroupUser.TabIndex = 6;
             this.GroupUser.Text = "GroupUser";
             this.GroupUser.UseVisualStyleBackColor = true;
@@ -1021,7 +1029,7 @@
             this.SeeLaws.Controls.Add(this.SeeLaws_Back_Buttom);
             this.SeeLaws.Location = new System.Drawing.Point(4, 22);
             this.SeeLaws.Name = "SeeLaws";
-            this.SeeLaws.Size = new System.Drawing.Size(351, 319);
+            this.SeeLaws.Size = new System.Drawing.Size(351, 314);
             this.SeeLaws.TabIndex = 7;
             this.SeeLaws.Text = "SeeLaws";
             this.SeeLaws.UseVisualStyleBackColor = true;
@@ -1063,7 +1071,7 @@
             this.CreateLaws.Controls.Add(this.label27);
             this.CreateLaws.Location = new System.Drawing.Point(4, 22);
             this.CreateLaws.Name = "CreateLaws";
-            this.CreateLaws.Size = new System.Drawing.Size(351, 319);
+            this.CreateLaws.Size = new System.Drawing.Size(351, 314);
             this.CreateLaws.TabIndex = 8;
             this.CreateLaws.Text = "CreateLaws";
             this.CreateLaws.UseVisualStyleBackColor = true;
@@ -1129,7 +1137,7 @@
             this.DeleteLaws.Controls.Add(this.DeleteLaws_SelectLaw_Combobox);
             this.DeleteLaws.Location = new System.Drawing.Point(4, 22);
             this.DeleteLaws.Name = "DeleteLaws";
-            this.DeleteLaws.Size = new System.Drawing.Size(351, 319);
+            this.DeleteLaws.Size = new System.Drawing.Size(351, 314);
             this.DeleteLaws.TabIndex = 9;
             this.DeleteLaws.Text = "DeleteLaws";
             this.DeleteLaws.UseVisualStyleBackColor = true;
@@ -1184,7 +1192,7 @@
             this.RentLaws.Controls.Add(this.RentLaws_ChooseLaw_Combobox);
             this.RentLaws.Location = new System.Drawing.Point(4, 22);
             this.RentLaws.Name = "RentLaws";
-            this.RentLaws.Size = new System.Drawing.Size(351, 319);
+            this.RentLaws.Size = new System.Drawing.Size(351, 314);
             this.RentLaws.TabIndex = 10;
             this.RentLaws.Text = "RentLaws";
             this.RentLaws.UseVisualStyleBackColor = true;
@@ -1267,7 +1275,7 @@
             this.Regulations.Controls.Add(this.label31);
             this.Regulations.Location = new System.Drawing.Point(4, 22);
             this.Regulations.Name = "Regulations";
-            this.Regulations.Size = new System.Drawing.Size(351, 319);
+            this.Regulations.Size = new System.Drawing.Size(351, 314);
             this.Regulations.TabIndex = 4;
             this.Regulations.Text = "Regulations";
             this.Regulations.UseVisualStyleBackColor = true;
@@ -1339,7 +1347,7 @@
             this.SeeRegulations.Controls.Add(this.label32);
             this.SeeRegulations.Location = new System.Drawing.Point(4, 22);
             this.SeeRegulations.Name = "SeeRegulations";
-            this.SeeRegulations.Size = new System.Drawing.Size(351, 319);
+            this.SeeRegulations.Size = new System.Drawing.Size(351, 314);
             this.SeeRegulations.TabIndex = 12;
             this.SeeRegulations.Text = "SeeRegulations";
             this.SeeRegulations.UseVisualStyleBackColor = true;
@@ -1466,7 +1474,7 @@
             this.DeleteRegulations.Controls.Add(this.label41);
             this.DeleteRegulations.Location = new System.Drawing.Point(4, 22);
             this.DeleteRegulations.Name = "DeleteRegulations";
-            this.DeleteRegulations.Size = new System.Drawing.Size(351, 319);
+            this.DeleteRegulations.Size = new System.Drawing.Size(351, 314);
             this.DeleteRegulations.TabIndex = 14;
             this.DeleteRegulations.Text = "DeleteRegulations";
             this.DeleteRegulations.UseVisualStyleBackColor = true;
@@ -1531,7 +1539,7 @@
             this.RentRegulations.Controls.Add(this.label39);
             this.RentRegulations.Location = new System.Drawing.Point(4, 22);
             this.RentRegulations.Name = "RentRegulations";
-            this.RentRegulations.Size = new System.Drawing.Size(351, 317);
+            this.RentRegulations.Size = new System.Drawing.Size(351, 314);
             this.RentRegulations.TabIndex = 15;
             this.RentRegulations.Text = "RentRegulations";
             this.RentRegulations.UseVisualStyleBackColor = true;
@@ -1604,6 +1612,57 @@
             this.label39.TabIndex = 2;
             this.label39.Text = "Seleccione el reglamento que desea prestar";
             // 
+            // Principal_Status_button
+            // 
+            this.Principal_Status_button.Location = new System.Drawing.Point(208, 147);
+            this.Principal_Status_button.Name = "Principal_Status_button";
+            this.Principal_Status_button.Size = new System.Drawing.Size(111, 35);
+            this.Principal_Status_button.TabIndex = 9;
+            this.Principal_Status_button.Text = "Status";
+            this.Principal_Status_button.UseVisualStyleBackColor = true;
+            this.Principal_Status_button.Visible = false;
+            this.Principal_Status_button.Click += new System.EventHandler(this.Principal_Status_button_Click);
+            // 
+            // Status
+            // 
+            this.Status.Controls.Add(this.label43);
+            this.Status.Controls.Add(this.Status_List_listBox);
+            this.Status.Controls.Add(this.Status_Back_Buttom);
+            this.Status.Location = new System.Drawing.Point(4, 22);
+            this.Status.Name = "Status";
+            this.Status.Size = new System.Drawing.Size(351, 314);
+            this.Status.TabIndex = 16;
+            this.Status.Text = "Status";
+            this.Status.UseVisualStyleBackColor = true;
+            // 
+            // Status_Back_Buttom
+            // 
+            this.Status_Back_Buttom.Location = new System.Drawing.Point(227, 15);
+            this.Status_Back_Buttom.Name = "Status_Back_Buttom";
+            this.Status_Back_Buttom.Size = new System.Drawing.Size(104, 30);
+            this.Status_Back_Buttom.TabIndex = 0;
+            this.Status_Back_Buttom.Text = "Back";
+            this.Status_Back_Buttom.UseVisualStyleBackColor = true;
+            this.Status_Back_Buttom.Click += new System.EventHandler(this.Status_Back_Buttom_Click);
+            // 
+            // Status_List_listBox
+            // 
+            this.Status_List_listBox.FormattingEnabled = true;
+            this.Status_List_listBox.Location = new System.Drawing.Point(3, 51);
+            this.Status_List_listBox.Name = "Status_List_listBox";
+            this.Status_List_listBox.Size = new System.Drawing.Size(345, 225);
+            this.Status_List_listBox.TabIndex = 1;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(11, 19);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(114, 20);
+            this.label43.TabIndex = 2;
+            this.label43.Text = "Sisley Status";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1643,6 +1702,8 @@
             this.DeleteRegulations.PerformLayout();
             this.RentRegulations.ResumeLayout(false);
             this.RentRegulations.PerformLayout();
+            this.Status.ResumeLayout(false);
+            this.Status.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1787,6 +1848,11 @@
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Button Regulations_Back_button;
+        private System.Windows.Forms.Button Principal_Status_button;
+        private System.Windows.Forms.TabPage Status;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.ListBox Status_List_listBox;
+        private System.Windows.Forms.Button Status_Back_Buttom;
     }
 }
 

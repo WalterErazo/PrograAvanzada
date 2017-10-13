@@ -158,6 +158,57 @@ namespace Proyecto1_PrograAvanzada
             Act_Work = "";
 
         }
+        private void Principal_Status_button_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < Goathemala.Congress.Length; i++)
+            {
+                Status_List_listBox.Items.Add(Goathemala.Congress[i].ReturnName() + ":");
+                
+                if (Goathemala.Congress[i].LeyesEnAlquiler.Length > 0)
+                {
+                    Status_List_listBox.Items.Add("Leyes:");
+                    for (int j = 0; j < Goathemala.Congress[i].LeyesEnAlquiler.Length; j++)
+                    {
+                        Status_List_listBox.Items.Add(Goathemala.Congress[i].LeyesEnAlquiler[j].returnName());
+                    }
+                }
+
+                if (Goathemala.Congress[i].ReglamentosEnAlquiler.Length > 0)
+                {
+                    Status_List_listBox.Items.Add("Reglamentos");
+                    for (int j = 0; j < Goathemala.Congress[i].ReglamentosEnAlquiler.Length; j++)
+                    {
+                        Status_List_listBox.Items.Add(Goathemala.Congress[i].ReglamentosEnAlquiler[j].returnName());
+                    }
+                }
+                Status_List_listBox.Items.Add("");
+                if (Goathemala.Congress[i].Asesores.Length > 0)
+                {
+                    Status_List_listBox.Items.Add("Asesores de :" + Goathemala.Congress[i].ReturnName());
+
+                    for (int k = 0; k < Goathemala.Congress[i].Asesores.Length; k++)
+                    {
+                        if (Goathemala.Congress[i].Asesores[k].LeyesEnAlquiler.Length > 0)
+                        {
+                            Status_List_listBox.Items.Add("Leyes:");
+                            for (int j = 0; j < Goathemala.Congress[i].Asesores[k].LeyesEnAlquiler.Length; j++)
+                            {
+                                Status_List_listBox.Items.Add(Goathemala.Congress[i].Asesores[k].LeyesEnAlquiler[j].returnName());
+                            }
+                        }
+
+                        if (Goathemala.Congress[i].Asesores[k].ReglamentosEnAlquiler.Length > 0)
+                        {
+                            Status_List_listBox.Items.Add("Reglamentos");
+                            for (int j = 0; j < Goathemala.Congress[i].Asesores[k].ReglamentosEnAlquiler.Length; j++)
+                            {
+                                Status_List_listBox.Items.Add(Goathemala.Congress[i].Asesores[k].ReglamentosEnAlquiler[j].returnName());
+                            }
+                        }
+                    }
+                }
+            }
+        }
         //---------------------------Principal---------------------------------------
 
 
@@ -684,6 +735,16 @@ namespace Proyecto1_PrograAvanzada
             RentRegulation_ReturnRegularion_comboBox.SelectedIndex = -1;
         }
         //---------------------------Rent/Return_Regulations---------------------------------------
+
+
+        //-------------------------------Status-----------------------------------------
+        private void Status_Back_Buttom_Click(object sender, EventArgs e)
+        {
+            A.SelectTab(2);
+            Status_List_listBox.Items.Clear();
+        }
+        //-------------------------------Status-----------------------------------------
+
 
 
         string SearchUserPassword(string Act_Name)
