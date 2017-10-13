@@ -208,10 +208,10 @@
             this.A.Controls.Add(this.DeleteRegulations);
             this.A.Controls.Add(this.RentRegulations);
             this.A.Controls.Add(this.Status);
-            this.A.Location = new System.Drawing.Point(-3, 0);
+            this.A.Location = new System.Drawing.Point(-3, -26);
             this.A.Name = "A";
             this.A.SelectedIndex = 0;
-            this.A.Size = new System.Drawing.Size(359, 340);
+            this.A.Size = new System.Drawing.Size(359, 366);
             this.A.TabIndex = 0;
             // 
             // LogIn
@@ -482,7 +482,7 @@
             this.Principal.Controls.Add(this.Principal_Laws_Buttom);
             this.Principal.Location = new System.Drawing.Point(4, 22);
             this.Principal.Name = "Principal";
-            this.Principal.Size = new System.Drawing.Size(351, 314);
+            this.Principal.Size = new System.Drawing.Size(351, 340);
             this.Principal.TabIndex = 2;
             this.Principal.Text = "Principal";
             this.Principal.UseVisualStyleBackColor = true;
