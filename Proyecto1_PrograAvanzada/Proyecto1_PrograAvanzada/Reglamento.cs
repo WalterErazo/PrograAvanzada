@@ -15,14 +15,16 @@ namespace Proyecto1_PrograAvanzada
         public Reglamento(string _Name, string _Description)
         {
             Name = _Name;
-            Description = _Name;
+            Description = _Description;
         }//Constructor de la clase
-
-
-
-
-
-
+        public string returnName()
+        {
+            return Name;
+        }//Devuelve el nombre de la ley
+        public string returnDescription()
+        {
+            return Description;
+        }//Devuelve la descripcion
 
         public void DeleteThisRegulation()
         {

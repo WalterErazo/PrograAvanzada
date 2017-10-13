@@ -115,6 +115,206 @@ namespace Proyecto1_PrograAvanzada
         public Ley returnLaws(int i)
         {
             return GoathemalaLaws[i];
-        }//Retorna la Ley del arreglo indicada
+        }//Retorna la Ley cuando se conoce su posicion
+        public int ReturnNumberOfLaw(string A)
+        {
+            for (int i = 0; i < GoathemalaLaws.Length; i++)
+            {
+                if (GoathemalaLaws[i].returnName() == A)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }//retorna la posicion de la ley en el arreglo oficial
+        public void rentLaws(string _name, ref Ley A)
+        {
+            for (int i = 0; i < GoathemalaLaws.Length; i++)
+            {
+                if ((_name == GoathemalaLaws[i].returnName()))
+                {
+                    if ((GoathemalaLaws[i].Copies > 0))
+                    {
+                        GoathemalaLaws[i].Copies--;
+                        A = GoathemalaLaws[i];
+                    }
+                    else
+                    {
+                        System.Windows.Forms.MessageBox.Show("Lo sentimos, actualmente no hay copias disponibles");
+                    }
+                }
+            }
+        }//Busca la ley para prestarla
+        public void returnLaws(string _name, ref Ley A)
+        {
+            for (int i = 0; i < GoathemalaLaws.Length; i++)
+            {
+                if ((_name == GoathemalaLaws[i].returnName()) && (GoathemalaLaws[i].Copies > 0))
+                {
+                    GoathemalaLaws[i].Copies++;
+                    A = GoathemalaLaws[i];
+                }
+            }
+        }//Busca la ley para retornarla
+        public void DeleteLaw(string Lawname)
+        {
+            Ley tempLey = new Ley("", "");
+            this.rentLaws(Lawname, ref tempLey);//Para poder convertir el nombre al objeto ley
+            //ciclo para que todos los parlamentarios que tienen la ley la regresen antes de eliminarla
+            for (int i = 0; i < Congress.Length; i++)
+            {
+                //Ciclo para que en un parlamentario se busque si tiene la ley
+                for (int j = 0; j < Congress[i].LeyesEnAlquiler.Length; j++)
+                {
+                    //si alguna de sus leyes coincide con el nombre, se devuelve
+                    if (Lawname == Congress[i].LeyesEnAlquiler[j].returnName())
+                    {
+                        Congress[i].DevolverLey(tempLey);
+                    }
+                }
+                //este ciclo es para buscar en los asesores a ver si alguno la tiene
+                for (int k = 0; k < 8; k++)
+                {
+                    //entra al parlamentario donde estan los asesores, entra a los asesores donde estan
+                    //sus leyes prestadas, entra a las leyes para comparar...
+                    for (int j = 0; j < Congress[i].Asesores[k].LeyesEnAlquiler.Length; j++)
+                    {
+                        if (Lawname == Congress[i].Asesores[k].LeyesEnAlquiler[j].returnName())
+                        {
+                            Congress[i].Asesores[k].DevolverLey(tempLey);
+                        }
+                    }
+                }
+                tempLey = null;
+                GoathemalaLaws[ReturnNumberOfLaw(Lawname)] = null;
+                this.ArreglarLeyes();
+            }
+        }
+        public void ArreglarLeyes()
+        {
+            int cont = 0;
+            for (int i = 0; i < GoathemalaLaws.Length; i++)
+            {
+                if (GoathemalaLaws[i] == null)
+                {
+                    for (int j = cont; j < (GoathemalaLaws.Length - 1); j++)
+                    {
+                        GoathemalaLaws[i] = GoathemalaLaws[i + 1];
+                    }
+                }
+                else
+                {
+                    cont++;
+                }
+            }
+            Array.Resize(ref GoathemalaLaws, (GoathemalaLaws.Length - 1));
+        }//Arregla el arreglo xd, para sacar el null y quitar el ultimo porque se repite
+
+
+        //Regulations
+        public string SearchAssociatedLaw(string _NameR)
+        {
+            for (int i = 0; i < GoathemalaLaws.Length; i++)
+            {
+                for (int j = 0; j < GoathemalaLaws[i].Reglamentos.Length; j++)
+                {
+                    if (GoathemalaLaws[i].Reglamentos[j].returnName() == _NameR)
+                    {
+                        return GoathemalaLaws[i].returnName();
+                    }
+                }
+            }
+            //solo para retornar algo
+            return "-1";
+        }//Busca el nombre de la ley asociada cuando solo se tiene el reglamento
+        public void rentRegulation(string _name, ref Reglamento A)
+        {
+            for (int i = 0; i < this.GoathemalaLaws.Length; i++)
+            {
+                for (int j = 0; j < this.GoathemalaLaws[i].Reglamentos.Length; j++)
+                {
+                    if ((_name == GoathemalaLaws[i].Reglamentos[j].returnName()))
+                    {
+                        if ((GoathemalaLaws[i].Reglamentos[j].Copies > 0))
+                        {
+                            GoathemalaLaws[i].Reglamentos[j].Copies--;
+                            A = GoathemalaLaws[i].Reglamentos[j];
+                        }
+                        else
+                        {
+                            System.Windows.Forms.MessageBox.Show("Lo sentimos, actualmente no hay copias disponibles");
+                        }
+                    }
+                }
+            }
+        }
+        public void returnRegulation(string _name, ref Reglamento A)
+        {
+            for (int i = 0; i < this.GoathemalaLaws.Length; i++)
+            {
+                for (int j = 0; j < this.GoathemalaLaws[i].Reglamentos.Length; j++)
+                {
+                    if ((_name == this.GoathemalaLaws[i].Reglamentos[j].returnName()) && (this.GoathemalaLaws[i].Reglamentos[j].Copies > 0))
+                    {
+                        this.GoathemalaLaws[i].Reglamentos[j].Copies++;
+                        A = GoathemalaLaws[i].Reglamentos[j];
+                    }
+                }
+            }//Busca la ley para retornarla
+        }
+
+        public void DeleteReg(string Lawname)
+        {
+            Ley tempLey = new Ley("", "");
+            this.rentLaws(Lawname, ref tempLey);//Para poder convertir el nombre al objeto ley
+            //ciclo para que todos los parlamentarios que tienen la ley la regresen antes de eliminarla
+            for (int i = 0; i < Congress.Length; i++)
+            {
+                //Ciclo para que en un parlamentario se busque si tiene la ley
+                for (int j = 0; j < Congress[i].LeyesEnAlquiler.Length; j++)
+                {
+                    //si alguna de sus leyes coincide con el nombre, se devuelve
+                    if (Lawname == Congress[i].LeyesEnAlquiler[j].returnName())
+                    {
+                        Congress[i].DevolverLey(tempLey);
+                    }
+                }
+                //este ciclo es para buscar en los asesores a ver si alguno la tiene
+                for (int k = 0; k < 8; k++)
+                {
+                    //entra al parlamentario donde estan los asesores, entra a los asesores donde estan
+                    //sus leyes prestadas, entra a las leyes para comparar...
+                    for (int j = 0; j < Congress[i].Asesores[k].LeyesEnAlquiler.Length; j++)
+                    {
+                        if (Lawname == Congress[i].Asesores[k].LeyesEnAlquiler[j].returnName())
+                        {
+                            Congress[i].Asesores[k].DevolverLey(tempLey);
+                        }
+                    }
+                }
+                tempLey = null;
+                GoathemalaLaws[ReturnNumberOfLaw(Lawname)] = null;
+                this.ArreglarLeyes();
+            }
+        }
+        public void ArreglarReg()
+        {
+            int cont = 0;
+            for (int i = 0; i < GoathemalaLaws.Length; i++)
+            {
+                if (GoathemalaLaws[i] == null)
+                {
+                    for (int j = cont; j < (GoathemalaLaws.Length - 1); j++)
+                    {
+                        GoathemalaLaws[i] = GoathemalaLaws[i + 1];
+                    }
+                }
+                else
+                {
+                    cont++;
+                }
+            }
+            Array.Resize(ref GoathemalaLaws, (GoathemalaLaws.Length - 1));
+        }//Arregla el arreglo xd, para sacar el null y quitar el ultimo porque se repite
     }
 }

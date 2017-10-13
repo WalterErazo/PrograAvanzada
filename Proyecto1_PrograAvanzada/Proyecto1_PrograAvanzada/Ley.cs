@@ -11,7 +11,7 @@ namespace Proyecto1_PrograAvanzada
         private string Name;
         private string Description;
         public int Copies = 5;
-        Reglamento[] Reglamentos = new Reglamento[0];
+        public Reglamento[] Reglamentos = new Reglamento[0];
 
         public Ley (string _Name, string _Description)
         {
@@ -35,9 +35,7 @@ namespace Proyecto1_PrograAvanzada
 
 
 
-
-
-        public void DeleteLaw(Ley A)
+        public void BorrarReglamentosAsociadosALey()
         {       
             while (Reglamentos.Length >= 1)
             {

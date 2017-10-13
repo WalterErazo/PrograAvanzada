@@ -125,28 +125,47 @@
             this.label30 = new System.Windows.Forms.Label();
             this.DeleteLaws_SelectLaw_Combobox = new System.Windows.Forms.ComboBox();
             this.RentLaws = new System.Windows.Forms.TabPage();
+            this.RentLaws_Back_Buttom = new System.Windows.Forms.Button();
+            this.RentLaws_Return_Buttom = new System.Windows.Forms.Button();
+            this.RentLaws_Rent_Buttom = new System.Windows.Forms.Button();
+            this.RentLaws_ReturnLaw_Combobox = new System.Windows.Forms.ComboBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.RentLaws_ChooseLaw_Combobox = new System.Windows.Forms.ComboBox();
             this.Regulations = new System.Windows.Forms.TabPage();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
+            this.Regulations_Back_button = new System.Windows.Forms.Button();
+            this.Regulations_CreateRegulations_button = new System.Windows.Forms.Button();
+            this.Regulations_DeleteRegulations_button = new System.Windows.Forms.Button();
+            this.Regulations_RentRegulations_button = new System.Windows.Forms.Button();
+            this.Regulations_SeeRegulations_button = new System.Windows.Forms.Button();
             this.label31 = new System.Windows.Forms.Label();
             this.SeeRegulations = new System.Windows.Forms.TabPage();
-            this.button24 = new System.Windows.Forms.Button();
+            this.SeeRegulation_Regulations_Listbox = new System.Windows.Forms.ListBox();
+            this.SeeRegulation_Back_Buttom = new System.Windows.Forms.Button();
             this.label32 = new System.Windows.Forms.Label();
             this.CreateRegulations = new System.Windows.Forms.TabPage();
+            this.CreateRegulation_Back_Button = new System.Windows.Forms.Button();
+            this.CreateRegulation_Create_Button = new System.Windows.Forms.Button();
+            this.CreateRegulation_Description_txt = new System.Windows.Forms.TextBox();
+            this.CreateRegulation_Associate_txt = new System.Windows.Forms.TextBox();
+            this.CreateRegulation_Name_txt = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.DeleteRegulations = new System.Windows.Forms.TabPage();
+            this.DeleteRegulation_Delete_comboBox = new System.Windows.Forms.ComboBox();
+            this.DeleteRegulation_Delete_button = new System.Windows.Forms.Button();
+            this.DeleteRegulation_Back_Button = new System.Windows.Forms.Button();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
             this.RentRegulations = new System.Windows.Forms.TabPage();
-            this.RentLaws_ChooseLaw_Combobox = new System.Windows.Forms.ComboBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.RentLaws_ReturnLaw_Combobox = new System.Windows.Forms.ComboBox();
-            this.RentLaws_Rent_Buttom = new System.Windows.Forms.Button();
-            this.RentLaws_Return_Buttom = new System.Windows.Forms.Button();
-            this.RentLaws_Back_Buttom = new System.Windows.Forms.Button();
-            this.SeeRegulation_Regulations_Listbox = new System.Windows.Forms.ListBox();
+            this.RentRegulation_Back_button = new System.Windows.Forms.Button();
+            this.RentRegulation_ReturnRegulation_button = new System.Windows.Forms.Button();
+            this.RentRegulation_RentRegulation_button = new System.Windows.Forms.Button();
+            this.RentRegulation_ReturnRegularion_comboBox = new System.Windows.Forms.ComboBox();
+            this.RentRegulation_ChooseRegulation_comboBox = new System.Windows.Forms.ComboBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
             this.A.SuspendLayout();
             this.LogIn.SuspendLayout();
             this.CreateANewUser.SuspendLayout();
@@ -161,6 +180,8 @@
             this.Regulations.SuspendLayout();
             this.SeeRegulations.SuspendLayout();
             this.CreateRegulations.SuspendLayout();
+            this.DeleteRegulations.SuspendLayout();
+            this.RentRegulations.SuspendLayout();
             this.SuspendLayout();
             // 
             // A
@@ -180,10 +201,10 @@
             this.A.Controls.Add(this.CreateRegulations);
             this.A.Controls.Add(this.DeleteRegulations);
             this.A.Controls.Add(this.RentRegulations);
-            this.A.Location = new System.Drawing.Point(-3, 2);
+            this.A.Location = new System.Drawing.Point(-3, 0);
             this.A.Name = "A";
             this.A.SelectedIndex = 0;
-            this.A.Size = new System.Drawing.Size(359, 343);
+            this.A.Size = new System.Drawing.Size(359, 340);
             this.A.TabIndex = 0;
             // 
             // LogIn
@@ -199,7 +220,7 @@
             this.LogIn.Location = new System.Drawing.Point(4, 22);
             this.LogIn.Name = "LogIn";
             this.LogIn.Padding = new System.Windows.Forms.Padding(3);
-            this.LogIn.Size = new System.Drawing.Size(351, 316);
+            this.LogIn.Size = new System.Drawing.Size(351, 319);
             this.LogIn.TabIndex = 0;
             this.LogIn.Text = "LogIn";
             this.LogIn.UseVisualStyleBackColor = true;
@@ -298,7 +319,7 @@
             this.CreateANewUser.Location = new System.Drawing.Point(4, 22);
             this.CreateANewUser.Name = "CreateANewUser";
             this.CreateANewUser.Padding = new System.Windows.Forms.Padding(3);
-            this.CreateANewUser.Size = new System.Drawing.Size(351, 317);
+            this.CreateANewUser.Size = new System.Drawing.Size(351, 319);
             this.CreateANewUser.TabIndex = 1;
             this.CreateANewUser.Text = "CreateANewUser";
             this.CreateANewUser.UseVisualStyleBackColor = true;
@@ -322,6 +343,7 @@
             // 
             // CreateANewUser_Work_Combobox
             // 
+            this.CreateANewUser_Work_Combobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CreateANewUser_Work_Combobox.FormattingEnabled = true;
             this.CreateANewUser_Work_Combobox.Items.AddRange(new object[] {
             "Parlamentario",
@@ -333,6 +355,8 @@
             // 
             // CreateANewUser_Sex_Combobox
             // 
+            this.CreateANewUser_Sex_Combobox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CreateANewUser_Sex_Combobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CreateANewUser_Sex_Combobox.FormattingEnabled = true;
             this.CreateANewUser_Sex_Combobox.Items.AddRange(new object[] {
             "Masculino",
@@ -450,7 +474,7 @@
             this.Principal.Controls.Add(this.Principal_Laws_Buttom);
             this.Principal.Location = new System.Drawing.Point(4, 22);
             this.Principal.Name = "Principal";
-            this.Principal.Size = new System.Drawing.Size(351, 317);
+            this.Principal.Size = new System.Drawing.Size(351, 319);
             this.Principal.TabIndex = 2;
             this.Principal.Text = "Principal";
             this.Principal.UseVisualStyleBackColor = true;
@@ -521,7 +545,7 @@
             this.UserDetails.Controls.Add(this.label13);
             this.UserDetails.Location = new System.Drawing.Point(4, 22);
             this.UserDetails.Name = "UserDetails";
-            this.UserDetails.Size = new System.Drawing.Size(351, 317);
+            this.UserDetails.Size = new System.Drawing.Size(351, 319);
             this.UserDetails.TabIndex = 5;
             this.UserDetails.Text = "UserDetails";
             this.UserDetails.UseVisualStyleBackColor = true;
@@ -667,7 +691,7 @@
             this.GroupUser.Controls.Add(this.GroupUser_Par_Txt);
             this.GroupUser.Location = new System.Drawing.Point(4, 22);
             this.GroupUser.Name = "GroupUser";
-            this.GroupUser.Size = new System.Drawing.Size(351, 317);
+            this.GroupUser.Size = new System.Drawing.Size(351, 319);
             this.GroupUser.TabIndex = 6;
             this.GroupUser.Text = "GroupUser";
             this.GroupUser.UseVisualStyleBackColor = true;
@@ -925,7 +949,7 @@
             this.Law.Controls.Add(this.Law_SeeLaws_Buttom);
             this.Law.Location = new System.Drawing.Point(4, 22);
             this.Law.Name = "Law";
-            this.Law.Size = new System.Drawing.Size(351, 317);
+            this.Law.Size = new System.Drawing.Size(351, 314);
             this.Law.TabIndex = 3;
             this.Law.Text = "Law";
             this.Law.UseVisualStyleBackColor = true;
@@ -997,7 +1021,7 @@
             this.SeeLaws.Controls.Add(this.SeeLaws_Back_Buttom);
             this.SeeLaws.Location = new System.Drawing.Point(4, 22);
             this.SeeLaws.Name = "SeeLaws";
-            this.SeeLaws.Size = new System.Drawing.Size(351, 317);
+            this.SeeLaws.Size = new System.Drawing.Size(351, 319);
             this.SeeLaws.TabIndex = 7;
             this.SeeLaws.Text = "SeeLaws";
             this.SeeLaws.UseVisualStyleBackColor = true;
@@ -1039,7 +1063,7 @@
             this.CreateLaws.Controls.Add(this.label27);
             this.CreateLaws.Location = new System.Drawing.Point(4, 22);
             this.CreateLaws.Name = "CreateLaws";
-            this.CreateLaws.Size = new System.Drawing.Size(351, 317);
+            this.CreateLaws.Size = new System.Drawing.Size(351, 319);
             this.CreateLaws.TabIndex = 8;
             this.CreateLaws.Text = "CreateLaws";
             this.CreateLaws.UseVisualStyleBackColor = true;
@@ -1105,7 +1129,7 @@
             this.DeleteLaws.Controls.Add(this.DeleteLaws_SelectLaw_Combobox);
             this.DeleteLaws.Location = new System.Drawing.Point(4, 22);
             this.DeleteLaws.Name = "DeleteLaws";
-            this.DeleteLaws.Size = new System.Drawing.Size(351, 317);
+            this.DeleteLaws.Size = new System.Drawing.Size(351, 319);
             this.DeleteLaws.TabIndex = 9;
             this.DeleteLaws.Text = "DeleteLaws";
             this.DeleteLaws.UseVisualStyleBackColor = true;
@@ -1142,6 +1166,7 @@
             // 
             // DeleteLaws_SelectLaw_Combobox
             // 
+            this.DeleteLaws_SelectLaw_Combobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.DeleteLaws_SelectLaw_Combobox.FormattingEnabled = true;
             this.DeleteLaws_SelectLaw_Combobox.Location = new System.Drawing.Point(23, 68);
             this.DeleteLaws_SelectLaw_Combobox.Name = "DeleteLaws_SelectLaw_Combobox";
@@ -1159,60 +1184,143 @@
             this.RentLaws.Controls.Add(this.RentLaws_ChooseLaw_Combobox);
             this.RentLaws.Location = new System.Drawing.Point(4, 22);
             this.RentLaws.Name = "RentLaws";
-            this.RentLaws.Size = new System.Drawing.Size(351, 317);
+            this.RentLaws.Size = new System.Drawing.Size(351, 319);
             this.RentLaws.TabIndex = 10;
             this.RentLaws.Text = "RentLaws";
             this.RentLaws.UseVisualStyleBackColor = true;
             // 
+            // RentLaws_Back_Buttom
+            // 
+            this.RentLaws_Back_Buttom.Location = new System.Drawing.Point(14, 240);
+            this.RentLaws_Back_Buttom.Name = "RentLaws_Back_Buttom";
+            this.RentLaws_Back_Buttom.Size = new System.Drawing.Size(105, 35);
+            this.RentLaws_Back_Buttom.TabIndex = 6;
+            this.RentLaws_Back_Buttom.Text = "Regresar";
+            this.RentLaws_Back_Buttom.UseVisualStyleBackColor = true;
+            this.RentLaws_Back_Buttom.Click += new System.EventHandler(this.RentLaws_Back_Buttom_Click);
+            // 
+            // RentLaws_Return_Buttom
+            // 
+            this.RentLaws_Return_Buttom.Location = new System.Drawing.Point(243, 197);
+            this.RentLaws_Return_Buttom.Name = "RentLaws_Return_Buttom";
+            this.RentLaws_Return_Buttom.Size = new System.Drawing.Size(105, 35);
+            this.RentLaws_Return_Buttom.TabIndex = 5;
+            this.RentLaws_Return_Buttom.Text = "Devolver";
+            this.RentLaws_Return_Buttom.UseVisualStyleBackColor = true;
+            this.RentLaws_Return_Buttom.Click += new System.EventHandler(this.RentLaws_Return_Buttom_Click);
+            // 
+            // RentLaws_Rent_Buttom
+            // 
+            this.RentLaws_Rent_Buttom.Location = new System.Drawing.Point(238, 84);
+            this.RentLaws_Rent_Buttom.Name = "RentLaws_Rent_Buttom";
+            this.RentLaws_Rent_Buttom.Size = new System.Drawing.Size(105, 35);
+            this.RentLaws_Rent_Buttom.TabIndex = 4;
+            this.RentLaws_Rent_Buttom.Text = "Rentar";
+            this.RentLaws_Rent_Buttom.UseVisualStyleBackColor = true;
+            this.RentLaws_Rent_Buttom.Click += new System.EventHandler(this.RentLaws_Rent_Buttom_Click);
+            // 
+            // RentLaws_ReturnLaw_Combobox
+            // 
+            this.RentLaws_ReturnLaw_Combobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.RentLaws_ReturnLaw_Combobox.FormattingEnabled = true;
+            this.RentLaws_ReturnLaw_Combobox.Location = new System.Drawing.Point(68, 170);
+            this.RentLaws_ReturnLaw_Combobox.Name = "RentLaws_ReturnLaw_Combobox";
+            this.RentLaws_ReturnLaw_Combobox.Size = new System.Drawing.Size(241, 21);
+            this.RentLaws_ReturnLaw_Combobox.TabIndex = 3;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(11, 142);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(271, 16);
+            this.label37.TabIndex = 2;
+            this.label37.Text = "Seleccione la ley que desea devolver\r\n";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(11, 29);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(259, 16);
+            this.label36.TabIndex = 1;
+            this.label36.Text = "Seleccione la ley que desea prestar";
+            // 
+            // RentLaws_ChooseLaw_Combobox
+            // 
+            this.RentLaws_ChooseLaw_Combobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.RentLaws_ChooseLaw_Combobox.FormattingEnabled = true;
+            this.RentLaws_ChooseLaw_Combobox.Location = new System.Drawing.Point(68, 57);
+            this.RentLaws_ChooseLaw_Combobox.Name = "RentLaws_ChooseLaw_Combobox";
+            this.RentLaws_ChooseLaw_Combobox.Size = new System.Drawing.Size(241, 21);
+            this.RentLaws_ChooseLaw_Combobox.TabIndex = 0;
+            // 
             // Regulations
             // 
-            this.Regulations.Controls.Add(this.button23);
-            this.Regulations.Controls.Add(this.button22);
-            this.Regulations.Controls.Add(this.button21);
-            this.Regulations.Controls.Add(this.button20);
+            this.Regulations.Controls.Add(this.Regulations_Back_button);
+            this.Regulations.Controls.Add(this.Regulations_CreateRegulations_button);
+            this.Regulations.Controls.Add(this.Regulations_DeleteRegulations_button);
+            this.Regulations.Controls.Add(this.Regulations_RentRegulations_button);
+            this.Regulations.Controls.Add(this.Regulations_SeeRegulations_button);
             this.Regulations.Controls.Add(this.label31);
             this.Regulations.Location = new System.Drawing.Point(4, 22);
             this.Regulations.Name = "Regulations";
-            this.Regulations.Size = new System.Drawing.Size(351, 316);
+            this.Regulations.Size = new System.Drawing.Size(351, 319);
             this.Regulations.TabIndex = 4;
             this.Regulations.Text = "Regulations";
             this.Regulations.UseVisualStyleBackColor = true;
             // 
-            // button23
+            // Regulations_Back_button
             // 
-            this.button23.Location = new System.Drawing.Point(49, 103);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(111, 32);
-            this.button23.TabIndex = 4;
-            this.button23.Text = "Crear Reglamento";
-            this.button23.UseVisualStyleBackColor = true;
+            this.Regulations_Back_button.Location = new System.Drawing.Point(242, 256);
+            this.Regulations_Back_button.Name = "Regulations_Back_button";
+            this.Regulations_Back_button.Size = new System.Drawing.Size(90, 32);
+            this.Regulations_Back_button.TabIndex = 5;
+            this.Regulations_Back_button.Text = "Regresar";
+            this.Regulations_Back_button.UseVisualStyleBackColor = true;
+            this.Regulations_Back_button.Click += new System.EventHandler(this.Regulations_Back_button_Click);
             // 
-            // button22
+            // Regulations_CreateRegulations_button
             // 
-            this.button22.Location = new System.Drawing.Point(49, 152);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(111, 32);
-            this.button22.TabIndex = 3;
-            this.button22.Text = "Borrar Reglamento";
-            this.button22.UseVisualStyleBackColor = true;
+            this.Regulations_CreateRegulations_button.Location = new System.Drawing.Point(49, 103);
+            this.Regulations_CreateRegulations_button.Name = "Regulations_CreateRegulations_button";
+            this.Regulations_CreateRegulations_button.Size = new System.Drawing.Size(111, 32);
+            this.Regulations_CreateRegulations_button.TabIndex = 4;
+            this.Regulations_CreateRegulations_button.Text = "Crear Reglamento";
+            this.Regulations_CreateRegulations_button.UseVisualStyleBackColor = true;
+            this.Regulations_CreateRegulations_button.Click += new System.EventHandler(this.Regulations_CreateRegulations_button_Click);
             // 
-            // button21
+            // Regulations_DeleteRegulations_button
             // 
-            this.button21.Location = new System.Drawing.Point(49, 202);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(111, 40);
-            this.button21.TabIndex = 2;
-            this.button21.Text = "Prestar/Devolver Reglamento";
-            this.button21.UseVisualStyleBackColor = true;
+            this.Regulations_DeleteRegulations_button.Location = new System.Drawing.Point(49, 152);
+            this.Regulations_DeleteRegulations_button.Name = "Regulations_DeleteRegulations_button";
+            this.Regulations_DeleteRegulations_button.Size = new System.Drawing.Size(111, 32);
+            this.Regulations_DeleteRegulations_button.TabIndex = 3;
+            this.Regulations_DeleteRegulations_button.Text = "Borrar Reglamento";
+            this.Regulations_DeleteRegulations_button.UseVisualStyleBackColor = true;
+            this.Regulations_DeleteRegulations_button.Click += new System.EventHandler(this.Regulations_DeleteRegulations_button_Click);
             // 
-            // button20
+            // Regulations_RentRegulations_button
             // 
-            this.button20.Location = new System.Drawing.Point(49, 55);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(111, 32);
-            this.button20.TabIndex = 1;
-            this.button20.Text = "Ver Reglamentos";
-            this.button20.UseVisualStyleBackColor = true;
+            this.Regulations_RentRegulations_button.Location = new System.Drawing.Point(49, 202);
+            this.Regulations_RentRegulations_button.Name = "Regulations_RentRegulations_button";
+            this.Regulations_RentRegulations_button.Size = new System.Drawing.Size(111, 40);
+            this.Regulations_RentRegulations_button.TabIndex = 2;
+            this.Regulations_RentRegulations_button.Text = "Prestar/Devolver Reglamento";
+            this.Regulations_RentRegulations_button.UseVisualStyleBackColor = true;
+            this.Regulations_RentRegulations_button.Click += new System.EventHandler(this.Regulations_RentRegulations_button_Click);
+            // 
+            // Regulations_SeeRegulations_button
+            // 
+            this.Regulations_SeeRegulations_button.Location = new System.Drawing.Point(49, 55);
+            this.Regulations_SeeRegulations_button.Name = "Regulations_SeeRegulations_button";
+            this.Regulations_SeeRegulations_button.Size = new System.Drawing.Size(111, 32);
+            this.Regulations_SeeRegulations_button.TabIndex = 1;
+            this.Regulations_SeeRegulations_button.Text = "Ver Reglamentos";
+            this.Regulations_SeeRegulations_button.UseVisualStyleBackColor = true;
+            this.Regulations_SeeRegulations_button.Click += new System.EventHandler(this.Regulations_SeeRegulations_button_Click);
             // 
             // label31
             // 
@@ -1227,23 +1335,32 @@
             // SeeRegulations
             // 
             this.SeeRegulations.Controls.Add(this.SeeRegulation_Regulations_Listbox);
-            this.SeeRegulations.Controls.Add(this.button24);
+            this.SeeRegulations.Controls.Add(this.SeeRegulation_Back_Buttom);
             this.SeeRegulations.Controls.Add(this.label32);
             this.SeeRegulations.Location = new System.Drawing.Point(4, 22);
             this.SeeRegulations.Name = "SeeRegulations";
-            this.SeeRegulations.Size = new System.Drawing.Size(351, 316);
+            this.SeeRegulations.Size = new System.Drawing.Size(351, 319);
             this.SeeRegulations.TabIndex = 12;
             this.SeeRegulations.Text = "SeeRegulations";
             this.SeeRegulations.UseVisualStyleBackColor = true;
             // 
-            // button24
+            // SeeRegulation_Regulations_Listbox
             // 
-            this.button24.Location = new System.Drawing.Point(255, 11);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(75, 23);
-            this.button24.TabIndex = 1;
-            this.button24.Text = "Regresar";
-            this.button24.UseVisualStyleBackColor = true;
+            this.SeeRegulation_Regulations_Listbox.FormattingEnabled = true;
+            this.SeeRegulation_Regulations_Listbox.Location = new System.Drawing.Point(12, 56);
+            this.SeeRegulation_Regulations_Listbox.Name = "SeeRegulation_Regulations_Listbox";
+            this.SeeRegulation_Regulations_Listbox.Size = new System.Drawing.Size(326, 212);
+            this.SeeRegulation_Regulations_Listbox.TabIndex = 2;
+            // 
+            // SeeRegulation_Back_Buttom
+            // 
+            this.SeeRegulation_Back_Buttom.Location = new System.Drawing.Point(255, 11);
+            this.SeeRegulation_Back_Buttom.Name = "SeeRegulation_Back_Buttom";
+            this.SeeRegulation_Back_Buttom.Size = new System.Drawing.Size(75, 23);
+            this.SeeRegulation_Back_Buttom.TabIndex = 1;
+            this.SeeRegulation_Back_Buttom.Text = "Regresar";
+            this.SeeRegulation_Back_Buttom.UseVisualStyleBackColor = true;
+            this.SeeRegulation_Back_Buttom.Click += new System.EventHandler(this.SeeRegulation_Back_Buttom_Click);
             // 
             // label32
             // 
@@ -1256,19 +1373,76 @@
             // 
             // CreateRegulations
             // 
+            this.CreateRegulations.Controls.Add(this.CreateRegulation_Back_Button);
+            this.CreateRegulations.Controls.Add(this.CreateRegulation_Create_Button);
+            this.CreateRegulations.Controls.Add(this.CreateRegulation_Description_txt);
+            this.CreateRegulations.Controls.Add(this.CreateRegulation_Associate_txt);
+            this.CreateRegulations.Controls.Add(this.CreateRegulation_Name_txt);
+            this.CreateRegulations.Controls.Add(this.label38);
             this.CreateRegulations.Controls.Add(this.label34);
             this.CreateRegulations.Controls.Add(this.label33);
             this.CreateRegulations.Location = new System.Drawing.Point(4, 22);
             this.CreateRegulations.Name = "CreateRegulations";
-            this.CreateRegulations.Size = new System.Drawing.Size(351, 316);
+            this.CreateRegulations.Size = new System.Drawing.Size(351, 314);
             this.CreateRegulations.TabIndex = 13;
             this.CreateRegulations.Text = "CreateRegulations";
             this.CreateRegulations.UseVisualStyleBackColor = true;
             // 
+            // CreateRegulation_Back_Button
+            // 
+            this.CreateRegulation_Back_Button.Location = new System.Drawing.Point(268, 52);
+            this.CreateRegulation_Back_Button.Name = "CreateRegulation_Back_Button";
+            this.CreateRegulation_Back_Button.Size = new System.Drawing.Size(75, 23);
+            this.CreateRegulation_Back_Button.TabIndex = 7;
+            this.CreateRegulation_Back_Button.Text = "Back";
+            this.CreateRegulation_Back_Button.UseVisualStyleBackColor = true;
+            this.CreateRegulation_Back_Button.Click += new System.EventHandler(this.CreateRegulation_Back_Button_Click);
+            // 
+            // CreateRegulation_Create_Button
+            // 
+            this.CreateRegulation_Create_Button.Location = new System.Drawing.Point(268, 28);
+            this.CreateRegulation_Create_Button.Name = "CreateRegulation_Create_Button";
+            this.CreateRegulation_Create_Button.Size = new System.Drawing.Size(75, 23);
+            this.CreateRegulation_Create_Button.TabIndex = 6;
+            this.CreateRegulation_Create_Button.Text = "Create";
+            this.CreateRegulation_Create_Button.UseVisualStyleBackColor = true;
+            this.CreateRegulation_Create_Button.Click += new System.EventHandler(this.CreateRegulation_Create_Button_Click);
+            // 
+            // CreateRegulation_Description_txt
+            // 
+            this.CreateRegulation_Description_txt.Location = new System.Drawing.Point(11, 94);
+            this.CreateRegulation_Description_txt.Multiline = true;
+            this.CreateRegulation_Description_txt.Name = "CreateRegulation_Description_txt";
+            this.CreateRegulation_Description_txt.Size = new System.Drawing.Size(332, 182);
+            this.CreateRegulation_Description_txt.TabIndex = 5;
+            // 
+            // CreateRegulation_Associate_txt
+            // 
+            this.CreateRegulation_Associate_txt.Location = new System.Drawing.Point(100, 52);
+            this.CreateRegulation_Associate_txt.Name = "CreateRegulation_Associate_txt";
+            this.CreateRegulation_Associate_txt.Size = new System.Drawing.Size(158, 20);
+            this.CreateRegulation_Associate_txt.TabIndex = 4;
+            // 
+            // CreateRegulation_Name_txt
+            // 
+            this.CreateRegulation_Name_txt.Location = new System.Drawing.Point(100, 28);
+            this.CreateRegulation_Name_txt.Name = "CreateRegulation_Name_txt";
+            this.CreateRegulation_Name_txt.Size = new System.Drawing.Size(158, 20);
+            this.CreateRegulation_Name_txt.TabIndex = 3;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(24, 55);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(70, 13);
+            this.label38.TabIndex = 2;
+            this.label38.Text = "Asociar a ley:";
+            // 
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(22, 66);
+            this.label34.Location = new System.Drawing.Point(11, 78);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(63, 13);
             this.label34.TabIndex = 1;
@@ -1285,92 +1459,150 @@
             // 
             // DeleteRegulations
             // 
+            this.DeleteRegulations.Controls.Add(this.DeleteRegulation_Delete_comboBox);
+            this.DeleteRegulations.Controls.Add(this.DeleteRegulation_Delete_button);
+            this.DeleteRegulations.Controls.Add(this.DeleteRegulation_Back_Button);
+            this.DeleteRegulations.Controls.Add(this.label42);
+            this.DeleteRegulations.Controls.Add(this.label41);
             this.DeleteRegulations.Location = new System.Drawing.Point(4, 22);
             this.DeleteRegulations.Name = "DeleteRegulations";
-            this.DeleteRegulations.Size = new System.Drawing.Size(351, 316);
+            this.DeleteRegulations.Size = new System.Drawing.Size(351, 319);
             this.DeleteRegulations.TabIndex = 14;
             this.DeleteRegulations.Text = "DeleteRegulations";
             this.DeleteRegulations.UseVisualStyleBackColor = true;
             // 
+            // DeleteRegulation_Delete_comboBox
+            // 
+            this.DeleteRegulation_Delete_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DeleteRegulation_Delete_comboBox.FormattingEnabled = true;
+            this.DeleteRegulation_Delete_comboBox.Location = new System.Drawing.Point(11, 104);
+            this.DeleteRegulation_Delete_comboBox.Name = "DeleteRegulation_Delete_comboBox";
+            this.DeleteRegulation_Delete_comboBox.Size = new System.Drawing.Size(309, 21);
+            this.DeleteRegulation_Delete_comboBox.TabIndex = 7;
+            // 
+            // DeleteRegulation_Delete_button
+            // 
+            this.DeleteRegulation_Delete_button.Location = new System.Drawing.Point(180, 145);
+            this.DeleteRegulation_Delete_button.Name = "DeleteRegulation_Delete_button";
+            this.DeleteRegulation_Delete_button.Size = new System.Drawing.Size(96, 34);
+            this.DeleteRegulation_Delete_button.TabIndex = 5;
+            this.DeleteRegulation_Delete_button.Text = "Eliminar";
+            this.DeleteRegulation_Delete_button.UseVisualStyleBackColor = true;
+            this.DeleteRegulation_Delete_button.Click += new System.EventHandler(this.DeleteRegulation_Delete_button_Click);
+            // 
+            // DeleteRegulation_Back_Button
+            // 
+            this.DeleteRegulation_Back_Button.Location = new System.Drawing.Point(57, 145);
+            this.DeleteRegulation_Back_Button.Name = "DeleteRegulation_Back_Button";
+            this.DeleteRegulation_Back_Button.Size = new System.Drawing.Size(96, 34);
+            this.DeleteRegulation_Back_Button.TabIndex = 4;
+            this.DeleteRegulation_Back_Button.Text = "Regresar";
+            this.DeleteRegulation_Back_Button.UseVisualStyleBackColor = true;
+            this.DeleteRegulation_Back_Button.Click += new System.EventHandler(this.DeleteRegulation_Back_Button_Click);
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(134, 72);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(71, 20);
+            this.label42.TabIndex = 3;
+            this.label42.Text = "eliminar";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(20, 52);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(300, 20);
+            this.label41.TabIndex = 2;
+            this.label41.Text = "Seleccione el reglamento que desea";
+            // 
             // RentRegulations
             // 
+            this.RentRegulations.Controls.Add(this.RentRegulation_Back_button);
+            this.RentRegulations.Controls.Add(this.RentRegulation_ReturnRegulation_button);
+            this.RentRegulations.Controls.Add(this.RentRegulation_RentRegulation_button);
+            this.RentRegulations.Controls.Add(this.RentRegulation_ReturnRegularion_comboBox);
+            this.RentRegulations.Controls.Add(this.RentRegulation_ChooseRegulation_comboBox);
+            this.RentRegulations.Controls.Add(this.label40);
+            this.RentRegulations.Controls.Add(this.label39);
             this.RentRegulations.Location = new System.Drawing.Point(4, 22);
             this.RentRegulations.Name = "RentRegulations";
-            this.RentRegulations.Size = new System.Drawing.Size(351, 316);
+            this.RentRegulations.Size = new System.Drawing.Size(351, 317);
             this.RentRegulations.TabIndex = 15;
             this.RentRegulations.Text = "RentRegulations";
             this.RentRegulations.UseVisualStyleBackColor = true;
             // 
-            // RentLaws_ChooseLaw_Combobox
+            // RentRegulation_Back_button
             // 
-            this.RentLaws_ChooseLaw_Combobox.FormattingEnabled = true;
-            this.RentLaws_ChooseLaw_Combobox.Location = new System.Drawing.Point(68, 57);
-            this.RentLaws_ChooseLaw_Combobox.Name = "RentLaws_ChooseLaw_Combobox";
-            this.RentLaws_ChooseLaw_Combobox.Size = new System.Drawing.Size(241, 21);
-            this.RentLaws_ChooseLaw_Combobox.TabIndex = 0;
+            this.RentRegulation_Back_button.Location = new System.Drawing.Point(14, 244);
+            this.RentRegulation_Back_button.Name = "RentRegulation_Back_button";
+            this.RentRegulation_Back_button.Size = new System.Drawing.Size(94, 32);
+            this.RentRegulation_Back_button.TabIndex = 8;
+            this.RentRegulation_Back_button.Text = "Regresar";
+            this.RentRegulation_Back_button.UseVisualStyleBackColor = true;
+            this.RentRegulation_Back_button.Click += new System.EventHandler(this.RentRegulation_Back_button_Click);
             // 
-            // label36
+            // RentRegulation_ReturnRegulation_button
             // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(11, 29);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(259, 16);
-            this.label36.TabIndex = 1;
-            this.label36.Text = "Seleccione la ley que desea prestar";
+            this.RentRegulation_ReturnRegulation_button.Location = new System.Drawing.Point(233, 212);
+            this.RentRegulation_ReturnRegulation_button.Name = "RentRegulation_ReturnRegulation_button";
+            this.RentRegulation_ReturnRegulation_button.Size = new System.Drawing.Size(94, 32);
+            this.RentRegulation_ReturnRegulation_button.TabIndex = 7;
+            this.RentRegulation_ReturnRegulation_button.Text = "Regresar";
+            this.RentRegulation_ReturnRegulation_button.UseVisualStyleBackColor = true;
+            this.RentRegulation_ReturnRegulation_button.Click += new System.EventHandler(this.RentRegulation_ReturnRegulation_button_Click);
             // 
-            // label37
+            // RentRegulation_RentRegulation_button
             // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(11, 142);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(259, 16);
-            this.label37.TabIndex = 2;
-            this.label37.Text = "Seleccione la ley que desea prestar";
+            this.RentRegulation_RentRegulation_button.Location = new System.Drawing.Point(233, 105);
+            this.RentRegulation_RentRegulation_button.Name = "RentRegulation_RentRegulation_button";
+            this.RentRegulation_RentRegulation_button.Size = new System.Drawing.Size(94, 32);
+            this.RentRegulation_RentRegulation_button.TabIndex = 6;
+            this.RentRegulation_RentRegulation_button.Text = "Prestar";
+            this.RentRegulation_RentRegulation_button.UseVisualStyleBackColor = true;
+            this.RentRegulation_RentRegulation_button.Click += new System.EventHandler(this.RentRegulation_RentRegulation_button_Click);
             // 
-            // RentLaws_ReturnLaw_Combobox
+            // RentRegulation_ReturnRegularion_comboBox
             // 
-            this.RentLaws_ReturnLaw_Combobox.FormattingEnabled = true;
-            this.RentLaws_ReturnLaw_Combobox.Location = new System.Drawing.Point(68, 170);
-            this.RentLaws_ReturnLaw_Combobox.Name = "RentLaws_ReturnLaw_Combobox";
-            this.RentLaws_ReturnLaw_Combobox.Size = new System.Drawing.Size(241, 21);
-            this.RentLaws_ReturnLaw_Combobox.TabIndex = 3;
+            this.RentRegulation_ReturnRegularion_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.RentRegulation_ReturnRegularion_comboBox.FormattingEnabled = true;
+            this.RentRegulation_ReturnRegularion_comboBox.Location = new System.Drawing.Point(35, 170);
+            this.RentRegulation_ReturnRegularion_comboBox.Name = "RentRegulation_ReturnRegularion_comboBox";
+            this.RentRegulation_ReturnRegularion_comboBox.Size = new System.Drawing.Size(270, 21);
+            this.RentRegulation_ReturnRegularion_comboBox.TabIndex = 5;
             // 
-            // RentLaws_Rent_Buttom
+            // RentRegulation_ChooseRegulation_comboBox
             // 
-            this.RentLaws_Rent_Buttom.Location = new System.Drawing.Point(238, 84);
-            this.RentLaws_Rent_Buttom.Name = "RentLaws_Rent_Buttom";
-            this.RentLaws_Rent_Buttom.Size = new System.Drawing.Size(105, 35);
-            this.RentLaws_Rent_Buttom.TabIndex = 4;
-            this.RentLaws_Rent_Buttom.Text = "Rentar";
-            this.RentLaws_Rent_Buttom.UseVisualStyleBackColor = true;
+            this.RentRegulation_ChooseRegulation_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.RentRegulation_ChooseRegulation_comboBox.FormattingEnabled = true;
+            this.RentRegulation_ChooseRegulation_comboBox.Location = new System.Drawing.Point(35, 67);
+            this.RentRegulation_ChooseRegulation_comboBox.Name = "RentRegulation_ChooseRegulation_comboBox";
+            this.RentRegulation_ChooseRegulation_comboBox.Size = new System.Drawing.Size(270, 21);
+            this.RentRegulation_ChooseRegulation_comboBox.TabIndex = 4;
             // 
-            // RentLaws_Return_Buttom
+            // label40
             // 
-            this.RentLaws_Return_Buttom.Location = new System.Drawing.Point(243, 197);
-            this.RentLaws_Return_Buttom.Name = "RentLaws_Return_Buttom";
-            this.RentLaws_Return_Buttom.Size = new System.Drawing.Size(105, 35);
-            this.RentLaws_Return_Buttom.TabIndex = 5;
-            this.RentLaws_Return_Buttom.Text = "Devolver";
-            this.RentLaws_Return_Buttom.UseVisualStyleBackColor = true;
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(11, 140);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(328, 16);
+            this.label40.TabIndex = 3;
+            this.label40.Text = "Seleccione el reglamento que desea devolver";
             // 
-            // RentLaws_Back_Buttom
+            // label39
             // 
-            this.RentLaws_Back_Buttom.Location = new System.Drawing.Point(14, 240);
-            this.RentLaws_Back_Buttom.Name = "RentLaws_Back_Buttom";
-            this.RentLaws_Back_Buttom.Size = new System.Drawing.Size(105, 35);
-            this.RentLaws_Back_Buttom.TabIndex = 6;
-            this.RentLaws_Back_Buttom.Text = "Regresar";
-            this.RentLaws_Back_Buttom.UseVisualStyleBackColor = true;
-            // 
-            // SeeRegulation_Regulations_Listbox
-            // 
-            this.SeeRegulation_Regulations_Listbox.FormattingEnabled = true;
-            this.SeeRegulation_Regulations_Listbox.Location = new System.Drawing.Point(12, 56);
-            this.SeeRegulation_Regulations_Listbox.Name = "SeeRegulation_Regulations_Listbox";
-            this.SeeRegulation_Regulations_Listbox.Size = new System.Drawing.Size(326, 212);
-            this.SeeRegulation_Regulations_Listbox.TabIndex = 2;
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Location = new System.Drawing.Point(11, 33);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(316, 16);
+            this.label39.TabIndex = 2;
+            this.label39.Text = "Seleccione el reglamento que desea prestar";
             // 
             // Form1
             // 
@@ -1407,6 +1639,10 @@
             this.SeeRegulations.PerformLayout();
             this.CreateRegulations.ResumeLayout(false);
             this.CreateRegulations.PerformLayout();
+            this.DeleteRegulations.ResumeLayout(false);
+            this.DeleteRegulations.PerformLayout();
+            this.RentRegulations.ResumeLayout(false);
+            this.RentRegulations.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1510,12 +1746,12 @@
         private System.Windows.Forms.Button DeleteLaws_Back_Buttom;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.ComboBox DeleteLaws_SelectLaw_Combobox;
-        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button Regulations_SeeRegulations_button;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button Regulations_CreateRegulations_button;
+        private System.Windows.Forms.Button Regulations_DeleteRegulations_button;
+        private System.Windows.Forms.Button Regulations_RentRegulations_button;
+        private System.Windows.Forms.Button SeeRegulation_Back_Buttom;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label33;
@@ -1532,6 +1768,25 @@
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.ComboBox RentLaws_ChooseLaw_Combobox;
         private System.Windows.Forms.ListBox SeeRegulation_Regulations_Listbox;
+        private System.Windows.Forms.Button CreateRegulation_Back_Button;
+        private System.Windows.Forms.Button CreateRegulation_Create_Button;
+        private System.Windows.Forms.TextBox CreateRegulation_Description_txt;
+        private System.Windows.Forms.TextBox CreateRegulation_Associate_txt;
+        private System.Windows.Forms.TextBox CreateRegulation_Name_txt;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.ComboBox DeleteRegulation_Delete_comboBox;
+        private System.Windows.Forms.Button DeleteRegulation_Delete_button;
+        private System.Windows.Forms.Button DeleteRegulation_Back_Button;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Button RentRegulation_Back_button;
+        private System.Windows.Forms.Button RentRegulation_ReturnRegulation_button;
+        private System.Windows.Forms.Button RentRegulation_RentRegulation_button;
+        private System.Windows.Forms.ComboBox RentRegulation_ReturnRegularion_comboBox;
+        private System.Windows.Forms.ComboBox RentRegulation_ChooseRegulation_comboBox;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Button Regulations_Back_button;
     }
 }
 
