@@ -496,7 +496,15 @@ namespace Proyecto1_PrograAvanzada
         }
         private void Regulations_DeleteRegulations_button_Click(object sender, EventArgs e)
         {
-
+            A.SelectTab(13);
+            DeleteRegulation_Delete_comboBox.Items.Clear();
+            for (int i = 0; i < Goathemala.GoathemalaLaws.Length; i++)
+            {
+                for (int j = 0; j < Goathemala.GoathemalaLaws[i].Reglamentos.Length; j++)
+                {
+                    DeleteRegulation_Delete_comboBox.Items.Add(Goathemala.GoathemalaLaws[i].Reglamentos[j].returnName());
+                }
+            }//llenar el combo box con los reglamentos posibles a eliminar
         }
         private void Regulations_RentRegulations_button_Click(object sender, EventArgs e)
         {
@@ -575,11 +583,20 @@ namespace Proyecto1_PrograAvanzada
         //---------------------------DeleteRegulations---------------------------------------
         private void DeleteRegulation_Delete_button_Click(object sender, EventArgs e)
         {
-
+            Goathemala.DeleteReg(DeleteRegulation_Delete_comboBox.Text);
+            DeleteRegulation_Delete_comboBox.Items.Clear();
+            for (int i = 0; i < Goathemala.GoathemalaLaws.Length; i++)
+            {
+                for (int j = 0; j < Goathemala.GoathemalaLaws[i].Reglamentos.Length; j++)
+                {
+                    DeleteRegulation_Delete_comboBox.Items.Add(Goathemala.GoathemalaLaws[i].Reglamentos[j].returnName());
+                }
+            }//llenar el combo box con los reglamentos posibles a eliminar
         }
         private void DeleteRegulation_Back_Button_Click(object sender, EventArgs e)
         {
-
+            A.SelectTab(10);
+            DeleteRegulation_Delete_comboBox.SelectedIndex = -1;
         }
         //---------------------------DeleteRegulations---------------------------------------
 
@@ -663,6 +680,8 @@ namespace Proyecto1_PrograAvanzada
         private void RentRegulation_Back_button_Click(object sender, EventArgs e)
         {
             A.SelectTab(10);
+            RentRegulation_ChooseRegulation_comboBox.SelectedIndex = -1;
+            RentRegulation_ReturnRegularion_comboBox.SelectedIndex = -1;
         }
         //---------------------------Rent/Return_Regulations---------------------------------------
 

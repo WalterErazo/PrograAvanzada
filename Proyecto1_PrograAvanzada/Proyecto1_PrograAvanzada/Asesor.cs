@@ -46,6 +46,14 @@ namespace Proyecto1_PrograAvanzada
             Age = 0;
             Sex = "";
             Password = "";
+            for (int i = 0; i < LeyesEnAlquiler.Length ; i++)
+            {
+                DevolverLey(LeyesEnAlquiler[i]);
+            }
+            for (int i = 0; i < ReglamentosEnAlquiler.Length ; i++)
+            {
+                DevolverReglamento(ReglamentosEnAlquiler[i]);
+            }
         }//Borra la Informacion de un Asesor
 
 

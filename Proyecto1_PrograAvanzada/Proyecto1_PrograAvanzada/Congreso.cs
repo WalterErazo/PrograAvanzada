@@ -263,20 +263,20 @@ namespace Proyecto1_PrograAvanzada
             }//Busca la ley para retornarla
         }
 
-        public void DeleteReg(string Lawname)
+        public void DeleteReg(string Regname)
         {
-            Ley tempLey = new Ley("", "");
-            this.rentLaws(Lawname, ref tempLey);//Para poder convertir el nombre al objeto ley
+            Reglamento tempReg = new Reglamento("", "");
+            this.rentRegulation(Regname, ref tempReg);//Para poder convertir el nombre al objeto ley
             //ciclo para que todos los parlamentarios que tienen la ley la regresen antes de eliminarla
             for (int i = 0; i < Congress.Length; i++)
             {
                 //Ciclo para que en un parlamentario se busque si tiene la ley
-                for (int j = 0; j < Congress[i].LeyesEnAlquiler.Length; j++)
+                for (int j = 0; j < Congress[i].ReglamentosEnAlquiler.Length; j++)
                 {
                     //si alguna de sus leyes coincide con el nombre, se devuelve
-                    if (Lawname == Congress[i].LeyesEnAlquiler[j].returnName())
+                    if (Regname == Congress[i].ReglamentosEnAlquiler[j].returnName())
                     {
-                        Congress[i].DevolverLey(tempLey);
+                        Congress[i].DevolverReglamento(tempReg);
                     }
                 }
                 //este ciclo es para buscar en los asesores a ver si alguno la tiene
@@ -284,37 +284,52 @@ namespace Proyecto1_PrograAvanzada
                 {
                     //entra al parlamentario donde estan los asesores, entra a los asesores donde estan
                     //sus leyes prestadas, entra a las leyes para comparar...
-                    for (int j = 0; j < Congress[i].Asesores[k].LeyesEnAlquiler.Length; j++)
+                    for (int j = 0; j < Congress[i].Asesores[k].ReglamentosEnAlquiler.Length; j++)
                     {
-                        if (Lawname == Congress[i].Asesores[k].LeyesEnAlquiler[j].returnName())
+                        if (Regname == Congress[i].Asesores[k].ReglamentosEnAlquiler[j].returnName())
                         {
-                            Congress[i].Asesores[k].DevolverLey(tempLey);
+                            Congress[i].Asesores[k].DevolverReglamento(tempReg);
                         }
                     }
                 }
-                tempLey = null;
-                GoathemalaLaws[ReturnNumberOfLaw(Lawname)] = null;
-                this.ArreglarLeyes();
+                tempReg = null;
+
+                for (int k = 0; k < this.GoathemalaLaws.Length; k++)
+                {
+                    for (int j = 0; j < this.GoathemalaLaws[i].Reglamentos.Length; j++)
+                    {
+                        if (GoathemalaLaws[i].Reglamentos[j].returnName() == Regname)
+                        {
+                            GoathemalaLaws[i].Reglamentos[j] = null;
+                        }
+                    }
+                }
             }
+            this.ArreglarReg();
         }
+        //Se supone que automaticamente detecta el null 
         public void ArreglarReg()
         {
             int cont = 0;
-            for (int i = 0; i < GoathemalaLaws.Length; i++)
+            for (int i = 0; i < this.GoathemalaLaws.Length; i++)
             {
-                if (GoathemalaLaws[i] == null)
+                for (int j = 0; j < this.GoathemalaLaws[i].Reglamentos.Length; j++)
                 {
-                    for (int j = cont; j < (GoathemalaLaws.Length - 1); j++)
+                    if (GoathemalaLaws[i].Reglamentos[j] == null)
                     {
-                        GoathemalaLaws[i] = GoathemalaLaws[i + 1];
+                        for (int k = cont; k < (GoathemalaLaws[i].Reglamentos.Length - 1); k++)
+                        {
+                            GoathemalaLaws[i].Reglamentos[k] = GoathemalaLaws[i].Reglamentos[k + 1];
+                        }
+                    }
+                    else
+                    {
+                        cont++;
                     }
                 }
-                else
-                {
-                    cont++;
-                }
+                Array.Resize(ref GoathemalaLaws[i].Reglamentos, (GoathemalaLaws[i].Reglamentos.Length - 1));
             }
-            Array.Resize(ref GoathemalaLaws, (GoathemalaLaws.Length - 1));
         }//Arregla el arreglo xd, para sacar el null y quitar el ultimo porque se repite
+
     }
 }
