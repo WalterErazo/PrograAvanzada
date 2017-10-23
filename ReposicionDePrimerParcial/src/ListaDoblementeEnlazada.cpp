@@ -6,6 +6,7 @@
  */
 #include <iostream>
 #include <cstdlib>
+#include "ListaEnlazada.h"
 #include "ListaDoblementeEnlazada.h"
 using namespace std;
 
@@ -71,3 +72,37 @@ void ListaDoblementeEnlazada::printList(){
 		curr = curr->next;
 	}
 }
+
+/*
+dnodePtr ListaDoblementeEnlazada::getHead(){
+	return head;
+}
+
+
+dnodePtr ListaDoblementeEnlazada::getTail(){
+	return tail;
+}
+
+bool ListaDoblementeEnlazada::compare(ListaEnlazada L1, ListaDoblementeEnlazada L2){
+	bool estaContenida = true;
+	nodePtr Nl1 = L1.getHead();
+	dnodePtr Nl2 = L2.getHead();
+
+	while (Nl1 != NULL && Nl2 != NULL){
+		if (Nl1->data == Nl2->data){
+			estaContenida = true;
+			Nl1 = Nl1->next;
+			Nl2 = Nl2->next;
+		}
+		else{
+			return false;
+		}
+
+
+
+	}
+
+
+
+}
+*/

@@ -49,3 +49,18 @@ void Stack::printStack(){
 	}
 	nn = NULL;
 }
+
+void Stack::Replace(int a, int b){
+	CnodePtr nn = stackPtr;
+	while (nn != NULL && nn->data != a){
+		nn = nn->prev;
+	}
+	if (nn == NULL){
+		cout<<"El numero especificado no se encuentra en la pila"<<endl;
+	}
+	else
+	{
+		nn->data = b;
+		this->printStack();
+	}
+}

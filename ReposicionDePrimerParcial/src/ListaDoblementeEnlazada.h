@@ -4,7 +4,7 @@
  *  Created on: 22/10/2017
  *      Author: Laptop
  */
-
+#include "ListaEnlazada.h"
 #ifndef LISTADOBLEMENTEENLAZADA_H_
 #define LISTADOBLEMENTEENLAZADA_H_
 
@@ -25,6 +25,10 @@ public:
 	void addNode(int addData);
 	void deleteNode(int delData);
 	void printList();
+	bool compare(ListaEnlazada L1, ListaDoblementeEnlazada L2);
+
+	dnodePtr getHead();
+	dnodePtr getTail();
 };
 
 #endif /* LISTADOBLEMENTEENLAZADA_H_ */

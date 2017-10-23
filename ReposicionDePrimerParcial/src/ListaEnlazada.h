@@ -10,10 +10,10 @@
 class ListaEnlazada
 {
 private:
-typedef struct node{
-	int data;
-	node* next;
-}* nodePtr;
+	typedef struct node{
+		int data;
+		node* next;
+	}* nodePtr;
 
 nodePtr head;
 nodePtr curr;
@@ -24,5 +24,6 @@ ListaEnlazada();
 void addNode(int addData);
 void deleteNode(int delData);
 void printList();
+nodePtr getHead();
 };
 #endif /* LISTAENLAZADA_H_ */

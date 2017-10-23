@@ -26,13 +26,7 @@ public:
 	void push(int data);
 	void pop();
 	void printStack();
-
-
-
-
-
-
-
+	void Replace(int a, int b);
 };
 
 #endif /* STACK_H_ */
