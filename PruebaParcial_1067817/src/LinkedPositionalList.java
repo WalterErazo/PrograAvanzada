@@ -99,7 +99,7 @@ public class LinkedPositionalList<E> implements PositionalList<E>{
 	private Position<E> addBetween(E e, Node<E> pred, Node<E> succ) {
 		Node<E> newest = new Node<>(e, pred, succ);
 		succ.setPrev(newest);
-                succ.setNext(newest);
+                pred.setNext(newest);
 		size++;
 		return newest;
 	}
