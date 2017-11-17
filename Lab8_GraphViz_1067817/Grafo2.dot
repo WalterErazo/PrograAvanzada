@@ -1,0 +1,11 @@
+graph {
+		Andres_Pineda -- EST[color=red,penwidth=2.0];
+		EST -- 1[color=blue,penwidth=3.0];
+		1 -- 0;
+		0 -- 6;
+		6 -- 7;
+		7 -- 8;
+		8 -- .1;
+		.1 -- .7;
+		.7 -- xD;
+	}
