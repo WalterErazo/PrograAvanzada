@@ -16,7 +16,7 @@ public class Cesar {
      distinguiendo mayúsculas de minúsculas
      */
     public String cifrarCesarEspañol(String frase, int distancia) {
-        
+
         String newString = "";
 
         for (int i = 0; i < frase.length(); i++) {
@@ -27,7 +27,7 @@ public class Cesar {
             } else {
                 if (c > 'a') {
                     if (c == 'z') {
-                        newString += (char) (('a' -  1) + distancia);
+                        newString += (char) (('a' - 1) + distancia);
                     } else {
                         newString += (char) (frase.charAt(i) + distancia);
                     }

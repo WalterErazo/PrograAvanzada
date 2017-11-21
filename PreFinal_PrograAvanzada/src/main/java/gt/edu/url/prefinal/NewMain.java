@@ -19,6 +19,7 @@ public class NewMain {
 
         //--------------------------------------------Serie#1---------------------------------------------------
         Cesar cod = new Cesar();
+        System.out.println("Aa Bb Cc Zz");
         System.out.println(cod.cifrarCesarEspañol("Aa Bb Cc Zz", 1));
         //--------------------------------------------Serie#1---------------------------------------------------
         
