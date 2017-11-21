@@ -12,18 +12,34 @@ package gt.edu.url.prefinal.serie1;
 public class Cesar {
 
     /*
-    el cual permite cifrar una frase aleatoria utilizando el alfabeto en idioma español
-    distinguiendo mayúsculas de minúsculas
-    */
-    String cifrarCesarEspañol(String frase, int distancia) {
-        return "";
-    }
-    
-    
-    /*
-    el cual permite cifrar una frase aleatoria utilizando el alfabeto proporcionado por el usuario.
-    */
-    String cifrarCesar(String frase, String alfabeto, int distancia) {
-        return "";
+     el cual permite cifrar una frase aleatoria utilizando el alfabeto en idioma español
+     distinguiendo mayúsculas de minúsculas
+     */
+    public String cifrarCesarEspañol(String frase, int distancia) {
+        
+        String newString = "";
+
+        for (int i = 0; i < frase.length(); i++) {
+            char c = (char) (frase.charAt(i));
+
+            if (c == ' ') {
+                newString += ' ';
+            } else {
+                if (c > 'a') {
+                    if (c == 'z') {
+                        newString += (char) (('a' -  1) + distancia);
+                    } else {
+                        newString += (char) (frase.charAt(i) + distancia);
+                    }
+                } else {
+                    if (c == 'Z') {
+                        newString += (char) (('A' - 1) + distancia);
+                    } else {
+                        newString += (char) (frase.charAt(i) + distancia);
+                    }
+                }
+            }
+        }
+        return newString;
     }
 }
